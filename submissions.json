@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF16989971": {
+    "contest_id": 513,
+    "language": "GNU C",
+    "path": "codeforces/513/A.c",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Game",
+    "problem_url": "https://codeforces.com/contest/513/problem/A",
+    "submission_id": "CF16989971",
+    "submission_url": "https://codeforces.com/contest/513/submission/16989971",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Mar/28/2016 22:13"
+  },
   "CF16993464": {
     "contest_id": 515,
     "language": "GNU C",
