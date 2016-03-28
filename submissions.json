@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF16995470": {
+    "contest_id": 50,
+    "language": "GNU C",
+    "path": "codeforces/50/A.c",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Domino piling",
+    "problem_url": "https://codeforces.com/contest/50/problem/A",
+    "submission_id": "CF16995470",
+    "submission_url": "https://codeforces.com/contest/50/submission/16995470",
+    "tags": [
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Mar/28/2016 23:07"
+  },
   "CF17023638": {
     "contest_id": 546,
     "language": "GNU C",
