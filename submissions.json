@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF17430274": {
+    "contest_id": 110,
+    "language": "GNU C",
+    "path": "codeforces/110/A.c",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Nearly Lucky Number",
+    "problem_url": "https://codeforces.com/contest/110/problem/A",
+    "submission_id": "CF17430274",
+    "submission_url": "https://codeforces.com/contest/110/submission/17430274",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Apr/22/2016 11:36"
+  },
   "CF17562787": {
     "contest_id": 148,
     "language": "GNU C",
