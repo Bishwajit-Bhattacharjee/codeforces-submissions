@@ -1,20 +1,20 @@
 #include <stdio.h>
-void work(char ara[], int x,int d)
+void work(int ara[], int x,int d)
 {
     int i;
     for(i=1;i*x<=d;i++)
     {
-        if(ara[i*x]=='0')
-        ara[i*x] = '1';
+        if(ara[i*x]==0)
+        ara[i*x] = 1;
 
     }
 }
 int main()
 {
   int k,l,m, n,d,i;
-  char ara[100001];
+  int ara[100001];
   for(i=0;i<100001;i++)
-    ara[i]='0';
+    ara[i]=0;
 
   scanf("%d %d %d %d %d", &k,&l,&m,&n,&d);
   work(ara,k,d);
@@ -24,7 +24,7 @@ int main()
   int count = 0;
   for(i=1;i<=d;i++)
   {
-      if(ara[i]=='1')
+      if(ara[i]==1)
           count++;
   }
   printf("%d\n",count);
