@@ -1265,6 +1265,25 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF22236079": {
+    "contest_id": 734,
+    "language": "GNU C++",
+    "path": "codeforces/734/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Anton and Digits",
+    "problem_url": "https://codeforces.com/contest/734/problem/B",
+    "submission_id": "CF22236079",
+    "submission_url": "https://codeforces.com/contest/734/submission/22236079",
+    "tags": [
+      "brute force",
+      "greedy",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Nov/15/2016 23:04"
+  },
   "CF22308854": {
     "contest_id": 71,
     "language": "GNU C++",
