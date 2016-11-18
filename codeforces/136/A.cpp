@@ -5,20 +5,20 @@ using namespace std;
 
 int main()
 {
-    int n, x;
-    //ara[110];
+    int n, ara[110];
     scanf("%d", &n);
-    int ara[n + 5];
     for(int i = 0 ; i < n; i++)
     {
-        //scanf("%d", &ara[i]);
-        scanf("%d", &x);
-        ara[x] = i + 1;
+        scanf("%d", &ara[i]);
     }
-    for(int i = 1 ; i <= n ; i++)
+    for(int i = 1;i <= n; i++)
     {
-        printf("%d ", ara[i]);
+        for(int k = 0; k < n; k++)
+        {
+            if(ara[k] == i)
+                printf("%d ", k + 1);
+        }
     }
-
+    printf("\n");
     return 0;
 }
