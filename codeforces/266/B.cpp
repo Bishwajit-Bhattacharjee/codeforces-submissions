@@ -19,9 +19,9 @@ int main()
         {
             if(str[j] == 'B'&& str[j+1] == 'G')
             {
-               str[j] = 'G';
-            //  str[j] = str[j+1];
-              str[j+1] = 'B';
+              temp = str[j];
+              str[j] = str[j+1];
+              str[j+1] = temp;
               j++;
             }
         }
