@@ -15,7 +15,9 @@ int main()
         cur = char_to_num(str[i]);
         if(last > cur && cur % 2 == 0)
         {
-            swap(str[i], str[len - 1]);
+            temp = str[len - 1];
+            str[len - 1] = str[i];
+            str[i] = temp;
             flag = true;
             break;
 
@@ -28,7 +30,9 @@ int main()
             cur = char_to_num(str[i]);
             if(last < cur && cur % 2 == 0)
             {
-             swap(str[i], str[len - 1]);
+            temp = str[len - 1];
+            str[len - 1] = str[i];
+            str[i] = temp;
             flag = true;
             break;
             }
