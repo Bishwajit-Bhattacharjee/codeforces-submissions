@@ -1265,6 +1265,24 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF22906609": {
+    "contest_id": 490,
+    "language": "GNU C++",
+    "path": "codeforces/490/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Team Olympiad",
+    "problem_url": "https://codeforces.com/contest/490/problem/A",
+    "submission_id": "CF22906609",
+    "submission_url": "https://codeforces.com/contest/490/submission/22906609",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*800"
+    ],
+    "timestamp": "Dec/12/2016 20:55"
+  },
   "CF22907689": {
     "contest_id": 439,
     "language": "GNU C++",
