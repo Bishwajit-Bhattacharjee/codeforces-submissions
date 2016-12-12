@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF22910270": {
+    "contest_id": 441,
+    "language": "GNU C++",
+    "path": "codeforces/441/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Valera and Antique Items",
+    "problem_url": "https://codeforces.com/contest/441/problem/A",
+    "submission_id": "CF22910270",
+    "submission_url": "https://codeforces.com/contest/441/submission/22910270",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/13/2016 00:12"
+  },
   "CF22930914": {
     "contest_id": 462,
     "language": "GNU C++",
