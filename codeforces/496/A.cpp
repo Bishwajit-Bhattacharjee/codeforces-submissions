@@ -19,17 +19,9 @@ int main()
    loop(i, 0, n-1)
      cin >> a[i];
    int mini = up;
-   int maxi = -up, n_maxi;
-   loop(i, 1, n-1)
-      maxi = max(maxi, a[i]-a[i-1]);
-    loop(i, 1, n-2)
-    {
-        n_maxi = max(maxi, a[i+1]-a[i-1]);
-        mini = min(mini, n_maxi);
-    }
- /*  loop(i, 1, n-2)
+   loop(i, 1, n-2)
    {
-
+       int maxi = -up;
        loop(k, 1, n-1)
        {
            l = k;s = k-1;
@@ -39,7 +31,7 @@ int main()
 
        }
        mini = min(mini, maxi);
-   }*/
+   }
    printf("%d\n", mini);
     return 0;
 
