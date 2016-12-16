@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23032977": {
+    "contest_id": 165,
+    "language": "GNU C++",
+    "path": "codeforces/165/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Supercentral Point",
+    "problem_url": "https://codeforces.com/contest/165/problem/A",
+    "submission_id": "CF23032977",
+    "submission_url": "https://codeforces.com/contest/165/submission/23032977",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/16/2016 21:26"
+  },
   "CF23041005": {
     "contest_id": 262,
     "language": "GNU C++",
