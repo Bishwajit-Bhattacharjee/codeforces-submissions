@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23078566": {
+    "contest_id": 745,
+    "language": "GNU C++",
+    "path": "codeforces/745/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Hongcow Learns the Cyclic Shift",
+    "problem_url": "https://codeforces.com/contest/745/problem/A",
+    "submission_id": "CF23078566",
+    "submission_url": "https://codeforces.com/contest/745/submission/23078566",
+    "tags": [
+      "implementation",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Dec/18/2016 13:03"
+  },
   "CF23079544": {
     "contest_id": 114,
     "language": "GNU C++",
