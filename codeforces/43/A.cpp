@@ -12,22 +12,24 @@ const int up = 1e-9;
 
 int main()
 {
- // map < string , int > a;
+  map < string , int > a;
    string s, x;
    int n;
    char buf[10];
-  // char a[110][19];
-  vector < string > a;
    cin >> n;
    gets(buf);
-   loop(i, 0 , n - 1)
+   int mx = 0;
+  loop(i, 0, n-1)
+  {
+    cin >> s;
+   a[s]++;
+   if(a[s] > mx)
    {
-       cin >> s;
-       a.pb(s);
+       mx = a[s];
+       x = s;
    }
-
-    sort(a.begin(), a.end());
-   cout << a[n/2] << endl;
+  }
+   cout << x << endl;
 
    return 0;
 }
