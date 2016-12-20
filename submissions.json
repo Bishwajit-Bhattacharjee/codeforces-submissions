@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23185302": {
+    "contest_id": 437,
+    "language": "GNU C++",
+    "path": "codeforces/437/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "The Child and Homework",
+    "problem_url": "https://codeforces.com/contest/437/problem/A",
+    "submission_id": "CF23185302",
+    "submission_url": "https://codeforces.com/contest/437/submission/23185302",
+    "tags": [
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Dec/21/2016 02:50"
+  },
   "CF23187611": {
     "contest_id": 363,
     "language": "GNU C++",
