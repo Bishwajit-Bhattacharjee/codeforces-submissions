@@ -1970,6 +1970,23 @@
     ],
     "timestamp": "Dec/21/2016 12:37"
   },
+  "CF23197360": {
+    "contest_id": 186,
+    "language": "GNU C++",
+    "path": "codeforces/186/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Comparing Strings",
+    "problem_url": "https://codeforces.com/contest/186/problem/A",
+    "submission_id": "CF23197360",
+    "submission_url": "https://codeforces.com/contest/186/submission/23197360",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Dec/21/2016 17:16"
+  },
   "CF23206689": {
     "contest_id": 108,
     "language": "GNU C++",
