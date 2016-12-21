@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23192403": {
+    "contest_id": 376,
+    "language": "GNU C++",
+    "path": "codeforces/376/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Lever",
+    "problem_url": "https://codeforces.com/contest/376/problem/A",
+    "submission_id": "CF23192403",
+    "submission_url": "https://codeforces.com/contest/376/submission/23192403",
+    "tags": [
+      "implementation",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Dec/21/2016 12:37"
+  },
   "CF23347288": {
     "contest_id": 509,
     "language": "GNU C++",
