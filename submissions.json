@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23347971": {
+    "contest_id": 493,
+    "language": "GNU C++",
+    "path": "codeforces/493/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Vasya and Wrestling",
+    "problem_url": "https://codeforces.com/contest/493/problem/B",
+    "submission_id": "CF23347971",
+    "submission_url": "https://codeforces.com/contest/493/submission/23347971",
+    "tags": [
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Dec/27/2016 02:17"
+  },
   "CF23354605": {
     "contest_id": 387,
     "language": "GNU C++",
