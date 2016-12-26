@@ -1265,6 +1265,24 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23347288": {
+    "contest_id": 509,
+    "language": "GNU C++",
+    "path": "codeforces/509/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Painting Pebbles",
+    "problem_url": "https://codeforces.com/contest/509/problem/B",
+    "submission_id": "CF23347288",
+    "submission_url": "https://codeforces.com/contest/509/submission/23347288",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Dec/27/2016 01:28"
+  },
   "CF23347971": {
     "contest_id": 493,
     "language": "GNU C++",
