@@ -1,15 +1,6 @@
 #include <bits/stdc++.h>
  using namespace std;
 
-bool cmp (pair <int, int > a, pair < int , int > b)
-{
-    if(a.first > b.first)
-        return true;
-    if(a.first < b.first)
-        return false ;
-    return (a.second > b.second);
-
-}
 
 
 int main()
@@ -22,7 +13,7 @@ vector < pair < int, int > > v;
         scanf("%d %d", &t1, &t2);
         v.push_back(make_pair(t2, t1));
     }
-    sort(v.begin(), v.end(), cmp);
+    sort(v.begin(), v.end(), greater < pair < int, int > > ());
     int cnt = 1;
     int ans  = 0;
     int len = v.size();
