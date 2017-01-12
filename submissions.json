@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF23747763": {
+    "contest_id": 757,
+    "language": "GNU C++",
+    "path": "codeforces/757/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Gotta Catch Em' All!",
+    "problem_url": "https://codeforces.com/contest/757/problem/A",
+    "submission_id": "CF23747763",
+    "submission_url": "https://codeforces.com/contest/757/submission/23747763",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jan/12/2017 22:01"
+  },
   "CF23761491": {
     "contest_id": 757,
     "language": "GNU C++",
