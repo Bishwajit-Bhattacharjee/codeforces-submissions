@@ -21,9 +21,9 @@ int main()
   {
       scanf("%d", &a[i]);
   }
-  int cnt[up] = {0};
-  //for(int i = 0; i < up ; i++)
-    // cnt[i] = 0;
+  int cnt[up];
+  for(int i = 0; i < up ; i++)
+     cnt[i] = 0;
 
   for(int i = 0; i < n; i++)
   {
