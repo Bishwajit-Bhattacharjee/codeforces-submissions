@@ -32,6 +32,6 @@ using namespace std;
    if(k != n-1 ) a[n] = k + 2;
    if(k  != n -1)swap(a[1], a[n]);
    for(int i = 1 ; i <= n; i++)
-      printf("%d ", a[i]);
+      cout << a[i] << ' ';
    return 0;
  }
