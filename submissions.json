@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF24455053": {
+    "contest_id": 630,
+    "language": "GNU C++",
+    "path": "codeforces/630/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Moore's Law",
+    "problem_url": "https://codeforces.com/contest/630/problem/B",
+    "submission_id": "CF24455053",
+    "submission_url": "https://codeforces.com/contest/630/submission/24455053",
+    "tags": [
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Feb/05/2017 22:09"
+  },
   "CF24455252": {
     "contest_id": 630,
     "language": "GNU C++",
