@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF25109380": {
+    "contest_id": 581,
+    "language": "GNU C++",
+    "path": "codeforces/581/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Luxurious Houses",
+    "problem_url": "https://codeforces.com/contest/581/problem/B",
+    "submission_id": "CF25109380",
+    "submission_url": "https://codeforces.com/contest/581/submission/25109380",
+    "tags": [
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Mar/01/2017 01:50"
+  },
   "CF25110238": {
     "contest_id": 489,
     "language": "GNU C++",
