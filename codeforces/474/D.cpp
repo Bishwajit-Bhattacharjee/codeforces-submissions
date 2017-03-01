@@ -36,7 +36,7 @@ int way(int i)
 int main(){
     // int n, k;
     int t,a,b;
-    scanf("%d%d", &t, &k) ;
+    cin >> t >> k;
     memset(dp, -1  , sizeof dp);
     cumsum[0] = 0;
     for(int i = 1; i < MX; i++)
@@ -48,7 +48,7 @@ int main(){
     for(int i = 1; i <= t; i++)
     {
         int ans;
-        scanf("%d %d", &a, &b);
+        cin >> a >> b;
         ans = cumsum[b] - cumsum[a-1];
         if(ans < 0) ans = ( ans + MOD) % MOD;
         cout << ans << endl;
