@@ -13,48 +13,50 @@ ll const MOD = 1e8;
 using namespace std;
 
 //global variables
-ll a[asize], sum[asize] = {0};
+ll a[asize], sum[asize];
 int n, m, k,num;
 ll dp[asize][asize];
+
 ll max_sum(int id, int rem)
 {
-   if(rem < 0)
-        return  (-1 *inf);
-
-   if (id >= num)
-   {
-       if(rem == 0)
-          return 0LL;
-       else
-        return (-1 * inf);
-   }
-   if(rem == 0)
+    if(id >= n)
+        return 0;
+    if(rem == 0)
     return 0;
+   
+   
+   
    if(dp[id][rem] != -1)
     return dp[id][rem];
    ll ret1, ret2 ;
    ret1 = sum[id] + max_sum(id + m, rem-1);
    ret2 = max_sum(id + 1, rem);
-
+   
    return dp[id][rem]  = max(ret1, ret2);
 }
 
 
 
 int main(){
-
+    //cout << -1 * inf;
+    memset(dp, -1, sizeof dp);
     cin >> n >> m >> k;
-    loop(i , 0 ,n-1)
+    ll tmp = 0;
+    for(int i = 0;i < n;i++)
     {
-        scanf("%I64d", &a[i]);
+        
+        cin >> a[i];
+        tmp += a[i];
+        if(i >= m - 1)
+           {
+               sum[i-m+1] = tmp;
+               tmp -= a[i-m+1];
     }
-    loop(i, 0, n-m+1)
-    {
-        for(int j = 0; j < m ; j++)
-            sum[i] += a[i + j];
     }
-     num  = n-m+1;
+    
+    
      memset(dp, -1, sizeof dp);
-    cout << max_sum(0, k);
+     
+    cout << max_sum(0, k) << endl;;
     return 0;
 }
