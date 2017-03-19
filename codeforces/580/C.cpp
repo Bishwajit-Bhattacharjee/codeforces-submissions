@@ -1,43 +1,62 @@
 #include <bits/stdc++.h>
+#define PII pair < int , int >
+#define PI 2.0*acos(0.0)
+#define ll long long int
+#define loop(i, a, n) for(int i = int (a); i <= int (n); i++)
+#define vi vector < int >
+#define pb push_back
 
+ll const inf =  1LL << 59 ;
+int  const MX  = 1e5 + 10 ;
+int const EPS = 1e-9;
+int  const MOD = 1e9 + 7;
 using namespace std;
 
-const int N = 100005;
+vector < int > adj[MX];
+int cat[MX];
+int vis[MX] = {0};
+int ans = 0;
+int m;
+void dfs(int s, int c){
 
-bool vis[N];
-vector <int> G[N];
-int Ret = 0, C[N], m;
+    vis[s] = 1;
+    if(c > m)
+        return ;
+    if(adj[s].size() == 1  && s != 1){
+        if(c <= m)
+            ans++;
+            //printf(" ans %d ", ans);
+        return;
+    }
+    for(int i = 0; i < adj[s].size(); i++){
+        if(vis[adj[s][i]] == 0){
+           if(cat[adj[s][i]] == 0)
+                dfs(adj[s][i], 0);
+           else
+             dfs(adj[s][i], c + 1);
+        }
+    }
 
-void DFS (int u, int cats) {
-	if (vis[u]) return;
-	vis[u] = 1;
-	if (C[u] == 0) cats = 0;
-	cats += C[u];
-	if (cats > m) {
-		//cats--;
-		return;
-	}
-
-	if (u != 1 && G[u].size() == 1) {
-		++Ret;
-		return;
-	}
-
-	for (int i = 0; i < G[u].size(); i++)
-		DFS(G[u][i], cats);
+    return ;
 }
 
-int main() {
-	int n; cin >> n >> m;
-	for (int i = 1; i <= n; i++) cin >> C[i];
-	for (int i = 1; i < n; i++) {
-		int a, b;
-		cin >> a >> b;
-		G[a].push_back(b);
-		G[b].push_back(a);
-	}
-	memset(vis, 0, sizeof vis);
-	DFS(1, 0);
-	cout << Ret << endl;
-	return 0;
+int main(){
+    int   n;
+    cin >> n >> m;
+    for(int i = 1;i <= n;i++)
+        scanf("%d", &cat[i]);
+        int mx , mn;
+
+    for(int i = 1; i < n; i++){
+        scanf("%d %d", &mn, &mx);
+
+        adj[mn].pb(mx);
+        adj[mx].pb(mn);
+    }
+    int x = cat[1];
+    dfs(1, x);
+    cout << ans << endl;
+
+
+    return 0;
 }
