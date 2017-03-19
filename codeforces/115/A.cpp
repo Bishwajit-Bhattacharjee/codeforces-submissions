@@ -34,22 +34,19 @@ int main(){
     int  n, m;
     int  a, b;
     cin >> n;
-    vi v;
     for(int i = 1;i  <= n; i++) {
             scanf("%d", &a);
-            if(a < 0) {v.pb(i);continue;}
+            if(a < 0) a = 0;
             adj[a].pb(i);
 
     }
     int ans = -1;
-    //for(int i = n; i >= 0; i--){
-    for(int i = 0; i < v.size(); i++){
-        if(vis[v[i]] == 0)
-            ans = max(ans, dfs(v[i]));
-       // printf("ans %d\n", ans + 1);
+    for(int i = 0; i <= n; i++){
+        if(vis[i] == 0)
+            ans = max(ans, dfs(i));
     }
 
-    cout << ans + 1<< endl;
+    cout << ans << endl;
 
 
     return 0;
