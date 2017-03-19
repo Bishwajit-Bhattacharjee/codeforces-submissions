@@ -14,8 +14,9 @@ using namespace std;
 
 vector < int > adj[MX];
 int vis[MX] = {0};
-int node = 0;
-int dfs(int s){
+ll node = 0;
+ll dfs(int s){
+    
     vis[s] = 1;
 
     for(int i = 0; i < adj[s].size(); i++){
@@ -29,7 +30,8 @@ int dfs(int s){
 }
 
 int main(){
-    int n, m, a, b;
+    ll n, m;
+    int  a, b;
     cin >> n >> m;
     for(int i = 0;i  < m; i++) {
             scanf("%d %d",&a, &b);
@@ -41,7 +43,7 @@ int main(){
         node = 0;
        if(vis[i] == 0){
           node = dfs(i);
-          sum += (long long)node*(node-1)/2;
+          sum += (long long)(node*(node-1))/2;
 
        }
     }
