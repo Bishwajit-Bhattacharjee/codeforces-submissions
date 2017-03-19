@@ -1265,6 +1265,24 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF25654316": {
+    "contest_id": 580,
+    "language": "GNU C++",
+    "path": "codeforces/580/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Kefa and Park",
+    "problem_url": "https://codeforces.com/contest/580/problem/C",
+    "submission_id": "CF25654316",
+    "submission_url": "https://codeforces.com/contest/580/submission/25654316",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "trees",
+      "*1500"
+    ],
+    "timestamp": "Mar/20/2017 01:41"
+  },
   "CF25698560": {
     "contest_id": 791,
     "language": "GNU C++",
