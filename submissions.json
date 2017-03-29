@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF25902669": {
+    "contest_id": 789,
+    "language": "GNU C++",
+    "path": "codeforces/789/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Anastasia and pebbles",
+    "problem_url": "https://codeforces.com/contest/789/problem/A",
+    "submission_id": "CF25902669",
+    "submission_url": "https://codeforces.com/contest/789/submission/25902669",
+    "tags": [
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Mar/29/2017 22:19"
+  },
   "CF25942897": {
     "contest_id": 466,
     "language": "GNU C++",
