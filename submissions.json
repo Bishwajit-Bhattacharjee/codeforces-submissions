@@ -3880,6 +3880,24 @@
     ],
     "timestamp": "Mar/30/2017 12:36"
   },
+  "CF25946167": {
+    "contest_id": 789,
+    "language": "GNU C++",
+    "path": "codeforces/789/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Functions again",
+    "problem_url": "https://codeforces.com/contest/789/problem/C",
+    "submission_id": "CF25946167",
+    "submission_url": "https://codeforces.com/contest/789/submission/25946167",
+    "tags": [
+      "data structures",
+      "dp",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Mar/30/2017 14:57"
+  },
   "CF25949060": {
     "contest_id": 401,
     "language": "GNU C++",
