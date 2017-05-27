@@ -5603,6 +5603,22 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF27367413": {
+    "contest_id": 602,
+    "language": "GNU C++14",
+    "path": "codeforces/602/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "The Two Routes",
+    "problem_url": "https://codeforces.com/contest/602/problem/C",
+    "submission_id": "CF27367413",
+    "submission_url": "https://codeforces.com/contest/602/submission/27367413",
+    "tags": [
+      "graphs",
+      "*1600"
+    ],
+    "timestamp": "May/27/2017 11:22"
+  },
   "CF27367843": {
     "contest_id": 595,
     "language": "GNU C++14",
