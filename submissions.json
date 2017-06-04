@@ -5603,6 +5603,22 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF27568457": {
+    "contest_id": 699,
+    "language": "GNU C++14",
+    "path": "codeforces/699/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "One Bomb",
+    "problem_url": "https://codeforces.com/contest/699/problem/B",
+    "submission_id": "CF27568457",
+    "submission_url": "https://codeforces.com/contest/699/submission/27568457",
+    "tags": [
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Jun/04/2017 23:42"
+  },
   "CF27569538": {
     "contest_id": 697,
     "language": "GNU C++14",
