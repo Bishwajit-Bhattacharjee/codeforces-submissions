@@ -5603,6 +5603,23 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF27568031": {
+    "contest_id": 699,
+    "language": "GNU C++14",
+    "path": "codeforces/699/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Vacations",
+    "problem_url": "https://codeforces.com/contest/699/problem/C",
+    "submission_id": "CF27568031",
+    "submission_url": "https://codeforces.com/contest/699/submission/27568031",
+    "tags": [
+      "brute force",
+      "dp",
+      "*1400"
+    ],
+    "timestamp": "Jun/04/2017 23:07"
+  },
   "CF27568457": {
     "contest_id": 699,
     "language": "GNU C++14",
