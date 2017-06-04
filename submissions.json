@@ -5603,6 +5603,25 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF27569538": {
+    "contest_id": 697,
+    "language": "GNU C++14",
+    "path": "codeforces/697/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Barnicle",
+    "problem_url": "https://codeforces.com/contest/697/problem/B",
+    "submission_id": "CF27569538",
+    "submission_url": "https://codeforces.com/contest/697/submission/27569538",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "strings",
+      "*1400"
+    ],
+    "timestamp": "Jun/05/2017 01:14"
+  },
   "CF27571350": {
     "contest_id": 697,
     "language": "GNU C++14",
