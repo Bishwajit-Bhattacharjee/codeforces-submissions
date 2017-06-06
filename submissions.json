@@ -5603,6 +5603,23 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF27620843": {
+    "contest_id": 382,
+    "language": "GNU C++14",
+    "path": "codeforces/382/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Arithmetic Progression",
+    "problem_url": "https://codeforces.com/contest/382/problem/C",
+    "submission_id": "CF27620843",
+    "submission_url": "https://codeforces.com/contest/382/submission/27620843",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Jun/07/2017 01:43"
+  },
   "CF27621684": {
     "contest_id": 388,
     "language": "GNU C++14",
