@@ -5603,6 +5603,23 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF28030300": {
+    "contest_id": 821,
+    "language": "GNU C++14",
+    "path": "codeforces/821/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Okabe and Banana Trees",
+    "problem_url": "https://codeforces.com/contest/821/problem/B",
+    "submission_id": "CF28030300",
+    "submission_url": "https://codeforces.com/contest/821/submission/28030300",
+    "tags": [
+      "brute force",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Jun/25/2017 21:26"
+  },
   "CF28081702": {
     "contest_id": 820,
     "language": "GNU C++14",
