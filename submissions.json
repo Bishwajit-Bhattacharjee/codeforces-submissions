@@ -5603,6 +5603,23 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF28143429": {
+    "contest_id": 818,
+    "language": "GNU C++14",
+    "path": "codeforces/818/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Diplomas and Certificates",
+    "problem_url": "https://codeforces.com/contest/818/problem/A",
+    "submission_id": "CF28143429",
+    "submission_url": "https://codeforces.com/contest/818/submission/28143429",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jun/29/2017 21:16"
+  },
   "CF28197146": {
     "contest_id": 460,
     "language": "GNU C++14",
