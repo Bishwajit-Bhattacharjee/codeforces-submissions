@@ -5603,6 +5603,22 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF28513046": {
+    "contest_id": 831,
+    "language": "GNU C++14",
+    "path": "codeforces/831/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Unimodal Array",
+    "problem_url": "https://codeforces.com/contest/831/problem/A",
+    "submission_id": "CF28513046",
+    "submission_url": "https://codeforces.com/contest/831/submission/28513046",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jul/13/2017 21:35"
+  },
   "CF28515174": {
     "contest_id": 831,
     "language": "GNU C++14",
