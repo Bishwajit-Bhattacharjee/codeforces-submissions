@@ -5603,6 +5603,23 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF28617936": {
+    "contest_id": 825,
+    "language": "GNU C++14",
+    "path": "codeforces/825/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Multi-judge Solving",
+    "problem_url": "https://codeforces.com/contest/825/problem/C",
+    "submission_id": "CF28617936",
+    "submission_url": "https://codeforces.com/contest/825/submission/28617936",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Jul/17/2017 01:00"
+  },
   "CF28645583": {
     "contest_id": 825,
     "language": "GNU C++14",
