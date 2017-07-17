@@ -5603,6 +5603,24 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF28645583": {
+    "contest_id": 825,
+    "language": "GNU C++14",
+    "path": "codeforces/825/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Suitable Replacement",
+    "problem_url": "https://codeforces.com/contest/825/problem/D",
+    "submission_id": "CF28645583",
+    "submission_url": "https://codeforces.com/contest/825/submission/28645583",
+    "tags": [
+      "binary search",
+      "greedy",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Jul/17/2017 23:38"
+  },
   "CF28773073": {
     "contest_id": 448,
     "language": "GNU C++14",
