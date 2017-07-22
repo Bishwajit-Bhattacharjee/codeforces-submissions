@@ -82,7 +82,7 @@ int main()
         lo = mid;
     }
    }
-   //if(isprime(ans) && ans > n && ans > m) ans++;
+   if(isprime(ans) && ans > n && ans > m) ans++;
    cout << ans << endl;
 return 0;
 
