@@ -5603,6 +5603,22 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF29047429": {
+    "contest_id": 834,
+    "language": "GNU C++14",
+    "path": "codeforces/834/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "The Useless Toy",
+    "problem_url": "https://codeforces.com/contest/834/problem/A",
+    "submission_id": "CF29047429",
+    "submission_url": "https://codeforces.com/contest/834/submission/29047429",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Jul/31/2017 17:59"
+  },
   "CF29048529": {
     "contest_id": 834,
     "language": "GNU C++14",
