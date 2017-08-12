@@ -1,3 +1,6 @@
+//HK HK HK HK HK 108 times
+
+
 #include <bits/stdc++.h>
 #define PII pair < int , int >
 #define PI 2.0*acos(0.0)
@@ -58,10 +61,10 @@ double dfs(int i)
     vis[i] = 1;
     double r = 0.0;
     int cnt = 0;
-    for(auto j : adj[i]){
-        if(!vis[j]){
+    for(int j =0 ; j < adj[i].size(); j++){
+        if(!vis[adj[i][j]]){
             cnt++;
-            r += dfs(j) ;
+            r += dfs(adj[i][j]) ;
         }
     }
     r /= cnt ;
