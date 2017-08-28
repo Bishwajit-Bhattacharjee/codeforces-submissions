@@ -5603,6 +5603,24 @@
     ],
     "timestamp": "Apr/15/2017 21:25"
   },
+  "CF29843816": {
+    "contest_id": 283,
+    "language": "GNU C++14",
+    "path": "codeforces/283/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Cows and Sequence",
+    "problem_url": "https://codeforces.com/contest/283/problem/A",
+    "submission_id": "CF29843816",
+    "submission_url": "https://codeforces.com/contest/283/submission/29843816",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Aug/28/2017 17:08"
+  },
   "CF29915998": {
     "contest_id": 231,
     "language": "GNU C++14",
