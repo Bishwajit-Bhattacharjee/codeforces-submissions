@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF30539149": {
+    "contest_id": 847,
+    "language": "GNU C++11",
+    "path": "codeforces/847/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "University Classes",
+    "problem_url": "https://codeforces.com/contest/847/problem/G",
+    "submission_id": "CF30539149",
+    "submission_url": "https://codeforces.com/contest/847/submission/30539149",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Sep/20/2017 14:54"
+  },
   "CF30539163": {
     "contest_id": 847,
     "language": "GNU C++14",
