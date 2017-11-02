@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF31986599": {
+    "contest_id": 872,
+    "language": "Java 8",
+    "path": "codeforces/872/A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Search for Pretty Integers",
+    "problem_url": "https://codeforces.com/contest/872/problem/A",
+    "submission_id": "CF31986599",
+    "submission_url": "https://codeforces.com/contest/872/submission/31986599",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Nov/02/2017 22:44"
+  },
   "CF32037075": {
     "contest_id": 603,
     "language": "GNU C++14",
