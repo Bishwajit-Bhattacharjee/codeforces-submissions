@@ -6,10 +6,8 @@ public class Bishwa {
         str1 = input.nextLine();
         //String str1 = new String();
         str1 = str1.toLowerCase();
-        char[] tmp = new char[str1.length()] ;
-        tmp = str1.toCharArray();
 
-        for(char ch : tmp){
+        for(char ch : str1.toCharArray()){
             if(ch == 'a'|| ch == 'e'||ch == 'i'
                     || ch == 'o' || ch == 'u'||ch == 'y')
                 continue;
