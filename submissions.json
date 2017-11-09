@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF32167030": {
+    "contest_id": 888,
+    "language": "Java 8",
+    "path": "codeforces/888/B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Buggy Robot",
+    "problem_url": "https://codeforces.com/contest/888/problem/B",
+    "submission_id": "CF32167030",
+    "submission_url": "https://codeforces.com/contest/888/submission/32167030",
+    "tags": [
+      "greedy",
+      "*1000"
+    ],
+    "timestamp": "Nov/09/2017 21:40"
+  },
   "CF32215192": {
     "contest_id": 364,
     "language": "GNU C++14",
