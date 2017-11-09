@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF32165000": {
+    "contest_id": 888,
+    "language": "Java 8",
+    "path": "codeforces/888/A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Local Extrema",
+    "problem_url": "https://codeforces.com/contest/888/problem/A",
+    "submission_id": "CF32165000",
+    "submission_url": "https://codeforces.com/contest/888/submission/32165000",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Nov/09/2017 21:26"
+  },
   "CF32167030": {
     "contest_id": 888,
     "language": "Java 8",
