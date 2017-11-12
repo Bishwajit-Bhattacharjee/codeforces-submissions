@@ -4018,6 +4018,21 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF32252922": {
+    "contest_id": 890,
+    "language": "GNU C++14",
+    "path": "codeforces/890/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Vlad and Cafes",
+    "problem_url": "https://codeforces.com/contest/890/problem/B",
+    "submission_id": "CF32252922",
+    "submission_url": "https://codeforces.com/contest/890/submission/32252922",
+    "tags": [
+      "*1000"
+    ],
+    "timestamp": "Nov/12/2017 22:19"
+  },
   "CF32279919": {
     "contest_id": 242,
     "language": "GNU C++14",
