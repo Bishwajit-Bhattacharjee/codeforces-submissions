@@ -75,15 +75,15 @@ void update(int pos , int ss, int se , int us , int ue , int lvl , int val)
 
 }
 
-//ll query(int pos , int ss ,int se , int qs, int qe )
-//{
-//    if(qs > se or qe < ss) return 0LL;
-//    if(qs <= ss and qe >= se )
-//        return seg[pos] ;
-//    int mid = (ss + se) / 2;
-//    return query(2*pos , ss, mid, qs, qe) + query(2*pos + 1, mid + 1, se , qs , qe) ;
-//
-//}
+ll query(int pos , int ss ,int se , int qs, int qe )
+{
+    if(qs > se or qe < ss) return 0LL;
+    if(qs <= ss and qe >= se )
+        return seg[pos] ;
+    int mid = (ss + se) / 2;
+    return query(2*pos , ss, mid, qs, qe) + query(2*pos + 1, mid + 1, se , qs , qe) ;
+
+}
 int main()
 {
    int n  , m ;
@@ -98,7 +98,7 @@ int main()
        int p , v;
        scanf("%d %d", &p , &v ) ;
        update(1, 1, 1<< n, p, p, n % 2, v) ;
-       printf("%lld\n", seg[1]) ;
+       printf("%lld\n", query(1,1,1<<n ,1, 1 << n)) ;
    }
 
    return 0 ;
