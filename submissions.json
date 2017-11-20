@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF32499047": {
+    "contest_id": 329,
+    "language": "GNU C++14",
+    "path": "codeforces/329/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Purification",
+    "problem_url": "https://codeforces.com/contest/329/problem/A",
+    "submission_id": "CF32499047",
+    "submission_url": "https://codeforces.com/contest/329/submission/32499047",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*1500"
+    ],
+    "timestamp": "Nov/20/2017 18:23"
+  },
   "CF32509689": {
     "contest_id": 261,
     "language": "GNU C++14",
