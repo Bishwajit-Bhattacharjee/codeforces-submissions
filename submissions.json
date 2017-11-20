@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF32509689": {
+    "contest_id": 261,
+    "language": "GNU C++14",
+    "path": "codeforces/261/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Maxim and Discounts",
+    "problem_url": "https://codeforces.com/contest/261/problem/A",
+    "submission_id": "CF32509689",
+    "submission_url": "https://codeforces.com/contest/261/submission/32509689",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Nov/21/2017 01:39"
+  },
   "CF32552847": {
     "contest_id": 311,
     "language": "GNU C++14",
