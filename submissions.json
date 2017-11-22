@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF32552847": {
+    "contest_id": 311,
+    "language": "GNU C++14",
+    "path": "codeforces/311/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "The Closest Pair",
+    "problem_url": "https://codeforces.com/contest/311/problem/A",
+    "submission_id": "CF32552847",
+    "submission_url": "https://codeforces.com/contest/311/submission/32552847",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Nov/22/2017 20:05"
+  },
   "CF32979574": {
     "contest_id": 166,
     "language": "GNU C++14",
