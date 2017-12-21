@@ -25,16 +25,20 @@ int main()
                 continue;
             }
             printf("%d\n",(1LL*n*(n+1)/2 )&1LL);
-
+            ll tot = 1LL*n*(n+1) /2 ;
             bool f = 1;
             printf("%d ", n / 2 );
-
+            int cnt = 0;ll sum = 0;
             for(int i = n ; i >= 2; i -= 2){
                 printf("%d ",(f)?i:i-1);
-
+           //     sum += (f)?i:i-1 ;
                 f ^= 1 ;
-
+                cnt++;
             }
+            //cout << cnt << endl;
+            //cout << tot - sum - sum<< ' ' << sum << endl;
+//            cout << endl << cnt << ' ' << 1LL*n*(n+1) /2 - sum << endl;
+//            cout << endl;
     }
     return 0;
 }
