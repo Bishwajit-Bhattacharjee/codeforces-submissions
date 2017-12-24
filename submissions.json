@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF33593244": {
+    "contest_id": 897,
+    "language": "GNU C++14",
+    "path": "codeforces/897/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Chtholly's request",
+    "problem_url": "https://codeforces.com/contest/897/problem/B",
+    "submission_id": "CF33593244",
+    "submission_url": "https://codeforces.com/contest/897/submission/33593244",
+    "tags": [
+      "brute force",
+      "*1300"
+    ],
+    "timestamp": "Dec/24/2017 18:39"
+  },
   "CF33595938": {
     "contest_id": 897,
     "language": "GNU C++14",
