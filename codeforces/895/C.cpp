@@ -33,7 +33,7 @@ ll bigmod(ll base, ll pow)
     return x;
 }
 vector < int > prime;
-int dp[71][(1<<19)+1];
+int dp[3][(1<<19)+1];
 ll pmod[100010] ;
 
 int mask1[71] ;
