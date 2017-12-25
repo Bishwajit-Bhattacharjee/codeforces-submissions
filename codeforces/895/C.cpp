@@ -94,12 +94,12 @@ int main()
    // cout << mask1[1] << ' '  << mask2[1] << endl;
     for(int i = 1; i <= 70 ; i++){
         for(int j = 0 ; j <= (1<<19); j++){
-            if(cnt[i])dp[i][j] = ((pmod[cnt[i]-1]) *(dp[(i-1)][j^mask1[i]] * 1LL + dp[(i-1)][j] ) ) % mod ;
+            if(cnt[i])dp[i&1][j] = ((pmod[cnt[i]-1]) *(dp[(i-1)&1][j^mask1[i]] * 1LL + dp[(i-1)&1][j] ) ) % mod ;
             else
-                dp[i][j] = dp[(i-1)][j] ;
+                dp[i&1][j] = dp[(i-1)&1][j] ;
         }
     }
-    cout << (dp[70][0] - 1 + mod ) % mod  << endl;
+    cout << (dp[70&1][0] - 1 + mod ) % mod  << endl;
     return 0;
 
 }
