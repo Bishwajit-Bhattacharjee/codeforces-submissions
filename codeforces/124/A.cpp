@@ -9,7 +9,11 @@ int main()
    int n , a , b ;
    cin >> n >> a >> b ;
 
-
-   cout << n + 1 - max(a+1,n-b) << endl;
+   for(int i = 1; i <= n; i++){
+      if(i - 1 >= a and n - i <= b ) {
+        cnt++;
+      }
+   }
+   cout << cnt << endl;
    return 0;
 }
