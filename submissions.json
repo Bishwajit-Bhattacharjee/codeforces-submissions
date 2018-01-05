@@ -4018,6 +4018,26 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF33916804": {
+    "contest_id": 696,
+    "language": "GNU C++14",
+    "path": "codeforces/696/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "PLEASE",
+    "problem_url": "https://codeforces.com/contest/696/problem/C",
+    "submission_id": "CF33916804",
+    "submission_url": "https://codeforces.com/contest/696/submission/33916804",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "implementation",
+      "math",
+      "matrices",
+      "*2000"
+    ],
+    "timestamp": "Jan/05/2018 12:49"
+  },
   "CF33917636": {
     "contest_id": 396,
     "language": "GNU C++14",
