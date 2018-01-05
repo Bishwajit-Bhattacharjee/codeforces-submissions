@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF33923172": {
+    "contest_id": 396,
+    "language": "GNU C++14",
+    "path": "codeforces/396/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "On Sum of Fractions",
+    "problem_url": "https://codeforces.com/contest/396/problem/B",
+    "submission_id": "CF33923172",
+    "submission_url": "https://codeforces.com/contest/396/submission/33923172",
+    "tags": [
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Jan/05/2018 19:59"
+  },
   "CF34609344": {
     "contest_id": 133,
     "language": "GNU C++14",
