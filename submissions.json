@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF34632542": {
+    "contest_id": 143,
+    "language": "GNU C++14",
+    "path": "codeforces/143/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Help Farmer",
+    "problem_url": "https://codeforces.com/contest/143/problem/C",
+    "submission_id": "CF34632542",
+    "submission_url": "https://codeforces.com/contest/143/submission/34632542",
+    "tags": [
+      "implementation",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Jan/28/2018 18:22"
+  },
   "CF34653997": {
     "contest_id": 146,
     "language": "GNU C++14",
