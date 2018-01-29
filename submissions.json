@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF34653997": {
+    "contest_id": 146,
+    "language": "GNU C++14",
+    "path": "codeforces/146/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Lucky Conversion",
+    "problem_url": "https://codeforces.com/contest/146/problem/C",
+    "submission_id": "CF34653997",
+    "submission_url": "https://codeforces.com/contest/146/submission/34653997",
+    "tags": [
+      "greedy",
+      "*1200"
+    ],
+    "timestamp": "Jan/29/2018 13:33"
+  },
   "CF34729620": {
     "contest_id": 917,
     "language": "GNU C++14",
