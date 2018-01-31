@@ -1,110 +1,147 @@
-#include <iostream>
-#include <algorithm>
-#include <cstring>
-#include <map>
-#include <vector>
+/// HK 108 Times
 #include <bits/stdc++.h>
-using namespace std;
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+#include <ext/pb_ds/detail/standard_policies.hpp>
 
+using namespace __gnu_pbds;
+using namespace __gnu_cxx;
+using namespace std ;
+#define ll long long
+#define pb push_back
+typedef pair <int,int>  PII ;
+vector < PII > given ;
+vector < pair < int , PII >  >  edge  ;
+typedef pair < ll, ll > PLL ;
+#define all(x) (x).begin() , (x).end()
+#define F first
+#define S second
+#define READ freopen("in.txt","r",stdin)
+#define WRITE freopen("out.txt","w",stdout)
+#define FAST ios_base::sync_with_stdio(false)
+#define ll long long
 #define MOD 1000000007
-#define MAX 1030
+#define endl '\n'
 
-int N, k;
-long long dp[MAX][MAX];
-long long comb[100002];
-map <int, int> cnt;
-vector <int> lucky;
+// Order Statistic Tree
 
-bool isLucky(int num)
-{
-   while(num)
-   {
-      if((num%10) != 4 && (num%10) != 7)
-         return false;
-      num /= 10;
-   }
-   return true;
+/* Special functions:
+
+        find_by_order(k) --> returns iterator to the kth largest element counting from 0
+        order_of_key(val) --> returns the number of items in a set that are strictly smaller than our item
+*/
+const int mod = 1e9 + 7 ;
+typedef tree<
+int,					// type long long
+null_type,
+less<int>,
+rb_tree_tag,
+tree_order_statistics_node_update>
+ordered_set;
+long long bigmod(long long p,long long e,long long M){
+    long long ret = 1;
+    for(; e > 0; e >>= 1){
+        if(e & 1) ret = (ret * p) % M;
+        p = (p * p) % M;
+    } return ret;
 }
-
-long long bigMod(int base, int pow)
+template <class T> inline T gcd(T a,T b){if(b==0)return a;return gcd(b,a%b);}
+ ll modinverse(ll a,ll M){return bigmod(a,M-2,M);}
+ll bigmod(ll base, ll pow)
 {
-   if(pow == 0)
-      return 1LL;
-   long long x = bigMod(base, pow/2);
-   x = (x*x)%MOD;
-   if(pow&1)
-      x = (x*base)%MOD;
-   return x;
+    if(pow == 0) return (1 % mod);
+    ll x = bigmod(base, pow/2 );
+    x = ( x * x ) % mod;
+    if(pow % 2 == 1)
+         x = (x * base) % mod;
+    return x;
 }
+const int MX = 1e5 + 10;
 
-void Comb(int n)
-{
-   comb[0] = 1LL;
-   for(int i=1; i<=n; i++)
-   {
-      comb[i] = (comb[i-1]*(n-i+1))%MOD;
-      comb[i] = (comb[i] * bigMod(i, MOD-2))%MOD;
-   }
-   for(int i=n+1; i<100002; i++)
-      comb[i] = 0;
+bool isLucky(int n) {
+    while(n != 0){
+        int dig = n % 10;
+        if(dig != 4 and dig != 7)
+            return false;
+        n /= 10;
+    }
+    return true;
 }
-
-long long ways(int pos, int taken)
+ll fact[MX];
+ll ncr(ll n, ll r)
 {
-   if(dp[pos][taken] != -1)
-      return dp[pos][taken];
-   /*if(taken == 0)
-      return 1;*/
-   if(pos == lucky.size()){
-       if( taken > k) return 0;
+    if(n < 0 or r < 0 ) return 0;
 
-       return comb[k-taken];
+    if(n < r) return 0;
+    ll t1 = modinverse(fact[r],mod);
+    ll t2 = modinverse(fact[n-r],mod);
+    ll ret = (((fact[n] * 1LL*t1) % mod) * t2) % mod;
+    return ret;
 
-   }
+    //return (fact[n]
+}
+map < ll , int > mp;
+vector < ll > lucky;
 
-   dp[pos][taken] = (ways(pos+1, taken) + (ways(pos+1, taken+1)*cnt[lucky[pos]])%MOD )%MOD;
-   return dp[pos][taken];
+void backtrack(ll cr)
+{
+    if(cr != 0 ) lucky.pb(cr);
+
+    if(cr > (int)(1e9 + 100) )
+        return;
+    backtrack(4 + 10 * cr) ;
+    backtrack(7 +10 * cr) ;
+}
+ll dp[2100][2100] ;
+int cnt = 0;
+int k;
+ll DP(int id, int tkn)
+{
+    if(id == lucky.size()) {
+        return ncr(cnt, k - tkn);
+
+    }
+    ll &ret = dp[id][tkn];
+    if(ret != -1)
+        return ret;
+    if(!mp.count(lucky[id])) {
+        ret = DP(id+1, tkn) ;
+    }
+
+    else {
+        ret = ( mp[lucky[id]] * DP(id+1, tkn + 1) ) % MOD;
+        ret = (ret +  DP(id+1, tkn )) % MOD;
+    }
+  //  cout << lucky[id] << " " << ret << endl;
+    return ret;
 }
 
 int main()
 {
-   //ios_base::sync_with_stdio(false);
+    backtrack(0);
+    sort(all(lucky));
+    fact[0]  = 1;
+    for(int i = 1 ; i < MX; i++)
+        fact[i] = (fact[i-1] * i) % MOD ;
 
-   int a, unlucky = 0;
-   cin>>N>>k;
+    int n;
+    cin >> n >> k;
+    int  tmp;
+    memset(dp, -1, sizeof dp);
+    for(int i = 0; i < n; i++){
+        scanf("%d",&tmp);
 
-   for(int i=0; i<N; i++)
-   {
-      cin>>a;
+        if(isLucky(tmp)){
 
-      if(isLucky(a))
-      {
-         if(cnt.find(a) == cnt.end())
-         {
-            lucky.push_back(a);
-            cnt[a] = 1;
-         }
-         else
-            cnt[a]++;
-      }
-      else
-         unlucky++;
-   }
+            mp[tmp]++;
+        }
+        else
+            cnt++;
+    }
+    ll ans = 0LL;
+   // cout << cnt << endl;
+   // cout << lucky.size() << endl;
+    cout << DP(0,0) << endl;
 
-   Comb(unlucky);
-   assert(lucky.size() <= MAX) ;
-
-   memset(dp, -1, sizeof(dp));
-
-   long long ans = 0;
-
-   /*for(int i=max((int)lucky.size(), k); i>=0; i--)
-   {
-      ans = ( ans + ( ways(0,i)*comb[k-i] )%MOD )%MOD;
-      //cout<<ways(0,i)<<endl;
-   }*/
-
-   cout<<ways(0,0)<<endl;
-
-   return 0;
+    return 0;
 }
