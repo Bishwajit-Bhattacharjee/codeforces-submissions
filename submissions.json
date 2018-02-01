@@ -4018,6 +4018,25 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF34794841": {
+    "contest_id": 148,
+    "language": "GNU C++14",
+    "path": "codeforces/148/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Bag of mice",
+    "problem_url": "https://codeforces.com/contest/148/problem/D",
+    "submission_id": "CF34794841",
+    "submission_url": "https://codeforces.com/contest/148/submission/34794841",
+    "tags": [
+      "dp",
+      "games",
+      "math",
+      "probabilities",
+      "*1800"
+    ],
+    "timestamp": "Feb/01/2018 14:13"
+  },
   "CF34796123": {
     "contest_id": 151,
     "language": "GNU C++14",
