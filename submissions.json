@@ -4018,6 +4018,25 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF34802146": {
+    "contest_id": 159,
+    "language": "GNU C++14",
+    "path": "codeforces/159/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Palindrome pairs",
+    "problem_url": "https://codeforces.com/contest/159/problem/D",
+    "submission_id": "CF34802146",
+    "submission_url": "https://codeforces.com/contest/159/submission/34802146",
+    "tags": [
+      "*special problem",
+      "brute force",
+      "dp",
+      "strings",
+      "*1500"
+    ],
+    "timestamp": "Feb/01/2018 18:29"
+  },
   "CF34803749": {
     "contest_id": 146,
     "language": "GNU C++14",
