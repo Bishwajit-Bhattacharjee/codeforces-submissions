@@ -4018,6 +4018,24 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF35299530": {
+    "contest_id": 932,
+    "language": "GNU C++14",
+    "path": "codeforces/932/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Recursive Queries",
+    "problem_url": "https://codeforces.com/contest/932/problem/B",
+    "submission_id": "CF35299530",
+    "submission_url": "https://codeforces.com/contest/932/submission/35299530",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dfs and similar",
+      "*1300"
+    ],
+    "timestamp": "Feb/15/2018 20:47"
+  },
   "CF35478871": {
     "contest_id": 935,
     "language": "GNU C++14",
