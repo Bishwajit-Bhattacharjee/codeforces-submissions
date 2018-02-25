@@ -4018,6 +4018,24 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF35698080": {
+    "contest_id": 937,
+    "language": "GNU C++14",
+    "path": "codeforces/937/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Vile Grasshoppers",
+    "problem_url": "https://codeforces.com/contest/937/problem/B",
+    "submission_id": "CF35698080",
+    "submission_url": "https://codeforces.com/contest/937/submission/35698080",
+    "tags": [
+      "brute force",
+      "math",
+      "number theory",
+      "*1400"
+    ],
+    "timestamp": "Feb/25/2018 22:56"
+  },
   "CF35765639": {
     "contest_id": 937,
     "language": "GNU C++14",
