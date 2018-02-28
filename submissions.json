@@ -4018,6 +4018,24 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF35791274": {
+    "contest_id": 487,
+    "language": "GNU C++14",
+    "path": "codeforces/487/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Prefix Product Sequence",
+    "problem_url": "https://codeforces.com/contest/487/problem/C",
+    "submission_id": "CF35791274",
+    "submission_url": "https://codeforces.com/contest/487/submission/35791274",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory",
+      "*2300"
+    ],
+    "timestamp": "Feb/28/2018 22:40"
+  },
   "CF35818863": {
     "contest_id": 798,
     "language": "GNU C++14",
