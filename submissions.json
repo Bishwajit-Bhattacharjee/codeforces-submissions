@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF35818863": {
+    "contest_id": 798,
+    "language": "GNU C++14",
+    "path": "codeforces/798/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Mike and distribution",
+    "problem_url": "https://codeforces.com/contest/798/problem/D",
+    "submission_id": "CF35818863",
+    "submission_url": "https://codeforces.com/contest/798/submission/35818863",
+    "tags": [
+      "constructive algorithms",
+      "sortings",
+      "*2400"
+    ],
+    "timestamp": "Mar/02/2018 03:42"
+  },
   "CF35996534": {
     "contest_id": 946,
     "language": "GNU C++14",
