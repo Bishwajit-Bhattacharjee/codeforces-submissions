@@ -4018,6 +4018,24 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF36588910": {
+    "contest_id": 957,
+    "language": "GNU C++14",
+    "path": "codeforces/957/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Mystical Mosaic",
+    "problem_url": "https://codeforces.com/contest/957/problem/B",
+    "submission_id": "CF36588910",
+    "submission_url": "https://codeforces.com/contest/957/submission/36588910",
+    "tags": [
+      "brute force",
+      "greedy",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Mar/24/2018 22:20"
+  },
   "CF36595897": {
     "contest_id": 957,
     "language": "GNU C++14",
