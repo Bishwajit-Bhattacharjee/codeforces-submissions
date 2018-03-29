@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 
 using namespace std ;
-int const MX = 4 * 1e5 + 100;
+int const MX = 2 * 1e5 + 100;
 typedef long long int ll;
 int const MOD = 1e9 + 7;
 
-int dp[3][MX] ;
+int dp[2][MX] ;
 int r,g;
 
 int main()
