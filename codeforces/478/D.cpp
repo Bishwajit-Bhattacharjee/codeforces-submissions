@@ -44,8 +44,7 @@ int main()
     
     int sum = 0;
     for(int i = 0; i <= r; i++){
-        sum = ( sum*1LL + dp[h&1][i]) ;
-        if(sum >= MOD ) sum -= MOD;
+        sum = ( sum*1LL + dp[h&1][i]) % MOD ;
      //  if(dp[h&1][i])printf("%d\n", sum);
     }
         
