@@ -36,8 +36,7 @@ int main()
                 sum =  dp[(i-1)&1][j]  ;
             if(j <= r && j >=  i )
                 sum = sum + dp[(i-1)&1][j-i]  ;
-                if(sum >= MOD ) sum -= MOD;
-            dp[i&1][j]  = sum ;
+            dp[i&1][j]  = (sum % MOD ) ;
             
 
         }
