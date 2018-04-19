@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF37456259": {
+    "contest_id": 963,
+    "language": "GNU C++14",
+    "path": "codeforces/963/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Alternating Sum",
+    "problem_url": "https://codeforces.com/contest/963/problem/A",
+    "submission_id": "CF37456259",
+    "submission_url": "https://codeforces.com/contest/963/submission/37456259",
+    "tags": [
+      "math",
+      "number theory",
+      "*1800"
+    ],
+    "timestamp": "Apr/19/2018 15:03"
+  },
   "CF37657040": {
     "contest_id": 208,
     "language": "GNU C++14",
