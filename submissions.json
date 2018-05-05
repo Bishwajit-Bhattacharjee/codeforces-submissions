@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF37907498": {
+    "contest_id": 429,
+    "language": "GNU C++14",
+    "path": "codeforces/429/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Working out",
+    "problem_url": "https://codeforces.com/contest/429/problem/B",
+    "submission_id": "CF37907498",
+    "submission_url": "https://codeforces.com/contest/429/submission/37907498",
+    "tags": [
+      "dp",
+      "*1600"
+    ],
+    "timestamp": "May/05/2018 19:29"
+  },
   "CF37930587": {
     "contest_id": 975,
     "language": "GNU C++14",
