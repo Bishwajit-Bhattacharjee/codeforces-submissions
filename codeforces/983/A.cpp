@@ -91,11 +91,8 @@ int main()
             }
             else
             {
-
+                q /= g;
                 b = __gcd(b,q) ;
-                while(q % b == 0)
-                    q /= b;
-
             }
         }
         if(q == 1)

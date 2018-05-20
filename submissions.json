@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF38467902": {
+    "contest_id": 983,
+    "language": "GNU C++14",
+    "path": "codeforces/983/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Finite or not?",
+    "problem_url": "https://codeforces.com/contest/983/problem/A",
+    "submission_id": "CF38467902",
+    "submission_url": "https://codeforces.com/contest/983/submission/38467902",
+    "tags": [
+      "implementation",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "May/21/2018 01:10"
+  },
   "CF38468099": {
     "contest_id": 983,
     "language": "GNU C++14",
