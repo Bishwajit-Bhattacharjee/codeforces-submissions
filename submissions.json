@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF38930720": {
+    "contest_id": 19,
+    "language": "GNU C++14",
+    "path": "codeforces/19/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Checkout Assistant",
+    "problem_url": "https://codeforces.com/contest/19/problem/B",
+    "submission_id": "CF38930720",
+    "submission_url": "https://codeforces.com/contest/19/submission/38930720",
+    "tags": [
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Jun/04/2018 03:28"
+  },
   "CF38949089": {
     "contest_id": 148,
     "language": "GNU C++14",
