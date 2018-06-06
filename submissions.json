@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF39001977": {
+    "contest_id": 41,
+    "language": "GNU C++14",
+    "path": "codeforces/41/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Pawn",
+    "problem_url": "https://codeforces.com/contest/41/problem/D",
+    "submission_id": "CF39001977",
+    "submission_url": "https://codeforces.com/contest/41/submission/39001977",
+    "tags": [
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Jun/07/2018 00:35"
+  },
   "CF39008243": {
     "contest_id": 126,
     "language": "GNU C++14",
