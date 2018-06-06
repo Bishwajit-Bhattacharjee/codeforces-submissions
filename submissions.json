@@ -4018,6 +4018,24 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF38999712": {
+    "contest_id": 11,
+    "language": "GNU C++14",
+    "path": "codeforces/11/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "A Simple Task",
+    "problem_url": "https://codeforces.com/contest/11/problem/D",
+    "submission_id": "CF38999712",
+    "submission_url": "https://codeforces.com/contest/11/submission/38999712",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "graphs",
+      "*2200"
+    ],
+    "timestamp": "Jun/06/2018 22:28"
+  },
   "CF39001977": {
     "contest_id": 41,
     "language": "GNU C++14",
