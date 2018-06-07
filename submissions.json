@@ -4018,6 +4018,24 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF39026959": {
+    "contest_id": 712,
+    "language": "GNU C++14",
+    "path": "codeforces/712/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Memory and Scores",
+    "problem_url": "https://codeforces.com/contest/712/problem/D",
+    "submission_id": "CF39026959",
+    "submission_url": "https://codeforces.com/contest/712/submission/39026959",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "math",
+      "*2200"
+    ],
+    "timestamp": "Jun/07/2018 22:33"
+  },
   "CF39029622": {
     "contest_id": 803,
     "language": "GNU C++14",
