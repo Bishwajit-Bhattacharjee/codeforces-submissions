@@ -4018,6 +4018,23 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF39030361": {
+    "contest_id": 625,
+    "language": "GNU C++14",
+    "path": "codeforces/625/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "K-special Tables",
+    "problem_url": "https://codeforces.com/contest/625/problem/C",
+    "submission_id": "CF39030361",
+    "submission_url": "https://codeforces.com/contest/625/submission/39030361",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jun/08/2018 01:34"
+  },
   "CF39038867": {
     "contest_id": 478,
     "language": "GNU C++11",
