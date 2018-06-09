@@ -4018,6 +4018,25 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF39075200": {
+    "contest_id": 114,
+    "language": "GNU C++14",
+    "path": "codeforces/114/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Petr#",
+    "problem_url": "https://codeforces.com/contest/114/problem/D",
+    "submission_id": "CF39075200",
+    "submission_url": "https://codeforces.com/contest/114/submission/39075200",
+    "tags": [
+      "data structures",
+      "hashing",
+      "string suffix structures",
+      "strings",
+      "*2000"
+    ],
+    "timestamp": "Jun/09/2018 23:26"
+  },
   "CF39076346": {
     "contest_id": 271,
     "language": "GNU C++14",
