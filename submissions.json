@@ -4018,6 +4018,22 @@
     ],
     "timestamp": "Apr/05/2017 21:53"
   },
+  "CF39390506": {
+    "contest_id": 992,
+    "language": "GNU C++14",
+    "path": "codeforces/992/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Nastya and a Wardrobe",
+    "problem_url": "https://codeforces.com/contest/992/problem/C",
+    "submission_id": "CF39390506",
+    "submission_url": "https://codeforces.com/contest/992/submission/39390506",
+    "tags": [
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Jun/19/2018 02:17"
+  },
   "CF39679409": {
     "contest_id": 700,
     "language": "GNU C++14",
