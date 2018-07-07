@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF40061851": {
+    "contest_id": 509,
+    "language": "GNU C++14",
+    "path": "codeforces/509/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Pretty Song",
+    "problem_url": "https://codeforces.com/contest/509/problem/E",
+    "submission_id": "CF40061851",
+    "submission_url": "https://codeforces.com/contest/509/submission/40061851",
+    "tags": [
+      "math",
+      "strings",
+      "*2000"
+    ],
+    "timestamp": "Jul/07/2018 19:03"
+  },
   "CF40063363": {
     "contest_id": 305,
     "language": "GNU C++14",
