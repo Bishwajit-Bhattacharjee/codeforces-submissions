@@ -73,35 +73,31 @@ int main()
 
     for(int i = 0; i < n; i++)
         cin >> ara[i].F.F >> ara[i].F.S, ara[i].S = i ;
-
+   // cout << ara[0].S << endl;
     sort(all(ara)) ;
-
+//    for(auto x : ara)
+//    {
+//        cout << x.F.F << endl;
+//    }
     int id = 0;
     priority_queue < PII > pq;
     vector < int > ans(n) ;
-    int cur = ara[0].F.F;
-    while(id < n )
+    for(int cur = 1; cur <= (int)1e7 ; cur++)
     {
-        cur = ara[id].F.F;
-        while( (id < n and ara[id].F.F <= cur) or !pq.empty())
+        while(ara[id].F.F <= cur && id < n )
         {
-            while(id < n and ara[id].F.F <= cur )
-            {
-                pq.push({-ara[id].F.S, -ara[id].S});
-                id++;
-            }
-
-            if(!pq.empty())
-            {
-                PII top = pq.top();
-                top.F *= -1;
-                top.S *= -1;
-                pq.pop();
-                ans[top.S] = cur++;
-            }
+            pq.push({-1 * ara[id].F.S, -1 * ara[id].S});
+            id++;
         }
-    }
+        if(pq.empty())
+            continue;
 
+        PII top = pq.top();
+        top.F *= -1;
+        top.S *= -1;
+        pq.pop();
+        ans[top.S] = cur;
+    }
     for(int i = 0 ; i < n; i++)
         cout << ans[i] << " " ;
     return 0;
