@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF40476628": {
+    "contest_id": 1005,
+    "language": "GNU C++14",
+    "path": "codeforces/1005/E1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E1",
+    "problem_name": "Median on Segments (Permutations Edition)",
+    "problem_url": "https://codeforces.com/contest/1005/problem/E1",
+    "submission_id": "CF40476628",
+    "submission_url": "https://codeforces.com/contest/1005/submission/40476628",
+    "tags": [
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Jul/17/2018 18:09"
+  },
   "CF40476878": {
     "contest_id": 1003,
     "language": "GNU C++14",
