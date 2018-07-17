@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF40476928": {
+    "contest_id": 1003,
+    "language": "GNU C++14",
+    "path": "codeforces/1003/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Tree Constructing",
+    "problem_url": "https://codeforces.com/contest/1003/problem/E",
+    "submission_id": "CF40476928",
+    "submission_url": "https://codeforces.com/contest/1003/submission/40476928",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "*2100"
+    ],
+    "timestamp": "Jul/17/2018 18:17"
+  },
   "CF40477176": {
     "contest_id": 257,
     "language": "GNU C++14",
