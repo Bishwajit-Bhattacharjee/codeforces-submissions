@@ -1,17 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long int ll;
-
-int main(){
-    int n;
-    cin >> n;
-    string ans ;
-    if(n == 2 or n % 2 == 1)
-        ans = "NO";
-    else
-        ans = "YES";
-    cout << ans << endl;
-
-    return 0;
+int main()
+{
+	int n;
+	while(cin >> n) 
+	{
+		if(n & 1 or n == 2) 
+			cout << "NO" << endl;
+		else
+			cout << "YES" << endl;
+	}
+	return 0;
 }
