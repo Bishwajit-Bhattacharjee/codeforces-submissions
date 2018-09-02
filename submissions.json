@@ -1265,6 +1265,25 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF42405407": {
+    "contest_id": 1037,
+    "language": "GNU C++14",
+    "path": "codeforces/1037/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Valid BFS?",
+    "problem_url": "https://codeforces.com/contest/1037/problem/D",
+    "submission_id": "CF42405407",
+    "submission_url": "https://codeforces.com/contest/1037/submission/42405407",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "shortest paths",
+      "trees",
+      "*1700"
+    ],
+    "timestamp": "Sep/03/2018 01:21"
+  },
   "CF42665824": {
     "contest_id": 375,
     "language": "GNU C++14",
