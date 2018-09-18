@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF43042733": {
+    "contest_id": 228,
+    "language": "GNU C++14",
+    "path": "codeforces/228/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Two Tables",
+    "problem_url": "https://codeforces.com/contest/228/problem/B",
+    "submission_id": "CF43042733",
+    "submission_url": "https://codeforces.com/contest/228/submission/43042733",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Sep/18/2018 22:25"
+  },
   "CF43181236": {
     "contest_id": 1051,
     "language": "GNU C++14",
