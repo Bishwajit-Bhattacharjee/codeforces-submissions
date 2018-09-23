@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF43342942": {
+    "contest_id": 703,
+    "language": "GNU C++14",
+    "path": "codeforces/703/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Mishka and Interesting sum",
+    "problem_url": "https://codeforces.com/contest/703/problem/D",
+    "submission_id": "CF43342942",
+    "submission_url": "https://codeforces.com/contest/703/submission/43342942",
+    "tags": [
+      "data structures",
+      "*2100"
+    ],
+    "timestamp": "Sep/24/2018 00:41"
+  },
   "CF43402613": {
     "contest_id": 198,
     "language": "GNU C++14",
