@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF43402613": {
+    "contest_id": 198,
+    "language": "GNU C++14",
+    "path": "codeforces/198/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "About Bacteria",
+    "problem_url": "https://codeforces.com/contest/198/problem/A",
+    "submission_id": "CF43402613",
+    "submission_url": "https://codeforces.com/contest/198/submission/43402613",
+    "tags": [
+      "implementation",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Sep/25/2018 15:41"
+  },
   "CF43404703": {
     "contest_id": 280,
     "language": "GNU C++14",
