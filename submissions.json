@@ -1265,6 +1265,24 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF43560869": {
+    "contest_id": 519,
+    "language": "GNU C++14",
+    "path": "codeforces/519/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "A and B and Compilation Errors",
+    "problem_url": "https://codeforces.com/contest/519/problem/B",
+    "submission_id": "CF43560869",
+    "submission_url": "https://codeforces.com/contest/519/submission/43560869",
+    "tags": [
+      "data structures",
+      "implementation",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Sep/29/2018 14:56"
+  },
   "CF43617454": {
     "contest_id": 704,
     "language": "GNU C++14",
