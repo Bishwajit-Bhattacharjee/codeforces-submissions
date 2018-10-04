@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF43758873": {
+    "contest_id": 1060,
+    "language": "GNU C++14",
+    "path": "codeforces/1060/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Phone Numbers",
+    "problem_url": "https://codeforces.com/contest/1060/problem/A",
+    "submission_id": "CF43758873",
+    "submission_url": "https://codeforces.com/contest/1060/submission/43758873",
+    "tags": [
+      "brute force",
+      "*800"
+    ],
+    "timestamp": "Oct/04/2018 13:10"
+  },
   "CF43763526": {
     "contest_id": 1060,
     "language": "GNU C++14",
