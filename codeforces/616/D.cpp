@@ -69,28 +69,23 @@ int main()
     FAST;
     int n,k;
     cin >> n >> k;
-    //set < int > s;
-    //map <int,int> cnt;
-    vector < int > cnt((int)1e6+10,0);
-
+    set < int > s;
+    map <int,int> cnt;
     vector < int > v(n+1);
     
     for(int i = 1; i <= n;i++)
         cin >> v[i] ;
-    int distinct = 0;
 
     int left = 0, right = -1;
     int l = 1;
     for(int r = 1; r <= n; r++){
         cnt[v[r]]++;
-        //s.insert(v[r]);
-        if(cnt[v[r]] == 1)
-            distinct++;
+        s.insert(v[r]);
 
-        while(distinct > k and l < r){
+        while(s.size() > k and l < r){
             cnt[v[l]]--;
             if(cnt[v[l]] == 0){
-                distinct--;
+                s.erase(v[l]);
             }
             l++;
         }
@@ -102,6 +97,6 @@ int main()
 
     }
     cout << left << " " << right << endl;
-
+    
     return 0;
 }
