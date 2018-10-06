@@ -1265,6 +1265,26 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF43912030": {
+    "contest_id": 359,
+    "language": "GNU C++14",
+    "path": "codeforces/359/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Pair of Numbers",
+    "problem_url": "https://codeforces.com/contest/359/problem/D",
+    "submission_id": "CF43912030",
+    "submission_url": "https://codeforces.com/contest/359/submission/43912030",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "math",
+      "two pointers",
+      "*2000"
+    ],
+    "timestamp": "Oct/06/2018 22:42"
+  },
   "CF43986399": {
     "contest_id": 1033,
     "language": "GNU C++11",
