@@ -58,47 +58,43 @@ ll bigmod(ll base, ll pow)
 int const MX = 3e5 + 10;
 
 
-PII seg[MX][19] ;
+PII seg[4*MX] ;
 int ara[MX] ;
 int n;
-void build()
+void build(int pos,int l, int r)
 {
-    for(int i = 1; i <=n; i++)
+    if(l == r)
     {
-        seg[i][0].F = seg[i][0].S = ara[i];
-        
-        //for(int x = 0)
+        seg[pos].F = seg[pos].S = ara[l] ;
+        return; 
     }
-    
-    for(int i = 1; i < 19; i++)
-    {
-        for(int j = 1; (j + (1<<i) - 1) <= n; j++)
-        {
-            seg[j][i].F = min(seg[j + (1<<(i-1))][i-1].F,seg[j][i-1].F);
-            seg[j][i].S = gcd(seg[j + (1<<(i-1))][i-1].S,seg[j][i-1].S);
-        }
-    }
+
+    int mid = (l + r) / 2;
+    build(pos*2,l, mid);
+    build(pos*2 + 1,mid + 1, r);
+    seg[pos].F = min(seg[pos*2].F, seg[pos*2 + 1].F);
+    seg[pos].S = gcd(seg[pos*2].S, seg[pos*2 + 1].S);
 }
 
-PII query(int l,int r)
+PII query(int pos,int l,int r,int ql,int qr)
 {
-    int mn;
-    
-    int k = (log(r-l+1)/ log(2.0));
-    mn = min(seg[l][k].F,seg[r-(1<<k)+1][k].F);
-    
-    int gd ;
-    
-    gd = gcd(seg[l][k].S, seg[r-(1<<k)+1][k].S);
-    return {mn,gd};
-    
+    if(ql <= l and r <= qr)
+        return seg[pos];
+
+    if(l > qr or r < ql){
+        return {(int)1e9, 0};
+    }
+    int mid = (l + r)/2 ;
+    PII c1 = query(pos*2,l, mid,ql,qr);
+    PII c2 = query(pos*2 + 1,mid + 1,r,ql,qr);
+    return {min(c1.F,c2.F),gcd(c1.S,c2.S)};
 }
 
 bool can(int mid)
 {
     for(int i = 1; i + mid-1 <= n;i++)
     {
-        PII can = query(i,i+mid-1);
+        PII can = query(1,1,n,i,i+mid-1);
         /*if(mid == 2){
             cout << i << " " << can.F << " " << can.S << endl;
 
@@ -124,8 +120,7 @@ int main()
 
     for(int i = 1; i <= n;i++)
         cin >> ara[i];
-        
-    build();
+    build(1,1,n);
 
     int lo = 1, hi = n;
     int ans = 0;
@@ -146,7 +141,7 @@ int main()
     vector < int > ls;
     for(int i = 1; i + ans - 1 <= n;i++)
     {
-        PII c = query(i,i+ans-1);
+        PII c = query(1,1,n,i,i+ans-1);
         if(c.F == c.S){
             ls.pb(i);
         }
