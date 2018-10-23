@@ -1265,6 +1265,24 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF44734933": {
+    "contest_id": 19,
+    "language": "GNU C++17",
+    "path": "codeforces/19/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Deletion of Repeats",
+    "problem_url": "https://codeforces.com/contest/19/problem/C",
+    "submission_id": "CF44734933",
+    "submission_url": "https://codeforces.com/contest/19/submission/44734933",
+    "tags": [
+      "greedy",
+      "hashing",
+      "string suffix structures",
+      "*2200"
+    ],
+    "timestamp": "Oct/23/2018 18:25"
+  },
   "CF44741203": {
     "contest_id": 898,
     "language": "GNU C++17",
