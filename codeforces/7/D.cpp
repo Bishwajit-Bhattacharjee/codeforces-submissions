@@ -21,8 +21,13 @@ PLL operator-(PLL x,PLL y) { return {x.F - y.F, x.S - y.S} ;}
 PLL operator*(PLL x,PLL y) { return {x.F * y.F , x.S * y.S} ;}
 PLL operator%(PLL x,PLL y) { return {x.F % y.F, x.S % y.S} ;}
 
-PLL base = {103,101};
-PLL M = {1000000021, 1e9 + 9 };
+ll base = 101;
+//PLL M = {1000000021, 1e9 + 9 };
+ll M = 1e9 + 21;
+
+int dp[(int)5e6 + 10] ;
+
+ll E[(int)5e6 + 10] ;
 
 ll val(char ch )
 {
@@ -37,18 +42,21 @@ int main()
 	cin >> s;
 	//cout << (int)('0')  << endl;
 
-	vector < int > dp(s.size() + 2) ;
+	E[0] = 1;
+	for(int i = 1; i < 5e6 + 6; i++)
+		E[i] = (E[i-1] * base ) % M ;
+
 	dp[0] = 1;
 	ll sum = 0;
-	PLL FH = {val(s[0]),val(s[0])};
-	PLL RH = {val(s[0]),val(s[0])} ;
-	PLL power = base;
+	ll FH = val(s[0]);
+	ll RH = FH ; //{val(s[0]),val(s[0])} ;
+	ll power;
 	ll ans = 1;
 
 	for(int i = 1; i < s.size(); i++)
 	{
+		power = E[i] ;
 		FH = (FH  + power * val(s[i]) ) % M ;
-		power = (power * base) % M ;
 		RH = (RH * base + val(s[i])) % M ;
 		if(FH == RH)
 			dp[i] = dp[(i/2 - (i%2 == 0))] + 1;
