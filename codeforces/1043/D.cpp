@@ -21,7 +21,7 @@ PLL operator-(PLL x,PLL y) { return {x.F - y.F, x.S - y.S} ;}
 PLL operator*(PLL x,PLL y) { return {x.F * y.F , x.S * y.S} ;}
 PLL operator%(PLL x,PLL y) { return {x.F % y.F, x.S % y.S} ;}
 
-ll base = 15485867;
+PLL base = {15485867,32452843};
 
 PLL M = {1000000021, 1e9 + 9 };
 int const MX = 1e5 + 10;
