@@ -1265,6 +1265,25 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF45067418": {
+    "contest_id": 371,
+    "language": "GNU C++11",
+    "path": "codeforces/371/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Vessels",
+    "problem_url": "https://codeforces.com/contest/371/problem/D",
+    "submission_id": "CF45067418",
+    "submission_url": "https://codeforces.com/contest/371/submission/45067418",
+    "tags": [
+      "data structures",
+      "dsu",
+      "implementation",
+      "trees",
+      "*1800"
+    ],
+    "timestamp": "Oct/29/2018 23:49"
+  },
   "CF45070272": {
     "contest_id": 109,
     "language": "GNU C++11",
