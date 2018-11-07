@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF45413982": {
+    "contest_id": 1034,
+    "language": "GNU C++11",
+    "path": "codeforces/1034/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Enlarge GCD",
+    "problem_url": "https://codeforces.com/contest/1034/problem/A",
+    "submission_id": "CF45413982",
+    "submission_url": "https://codeforces.com/contest/1034/submission/45413982",
+    "tags": [
+      "number theory",
+      "*1800"
+    ],
+    "timestamp": "Nov/07/2018 19:17"
+  },
   "CF45711483": {
     "contest_id": 1076,
     "language": "GNU C++11",
