@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF46445301": {
+    "contest_id": 1082,
+    "language": "GNU C++17",
+    "path": "codeforces/1082/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Petya and Graph",
+    "problem_url": "https://codeforces.com/contest/1082/problem/G",
+    "submission_id": "CF46445301",
+    "submission_url": "https://codeforces.com/contest/1082/submission/46445301",
+    "tags": [
+      "flows",
+      "graphs",
+      "*2400"
+    ],
+    "timestamp": "Dec/01/2018 19:06"
+  },
   "CF47180875": {
     "contest_id": 86,
     "language": "GNU C++17",
