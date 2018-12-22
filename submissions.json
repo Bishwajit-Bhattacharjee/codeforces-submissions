@@ -1265,6 +1265,22 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF47373680": {
+    "contest_id": 264,
+    "language": "GNU C++17",
+    "path": "codeforces/264/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Choosing Balls",
+    "problem_url": "https://codeforces.com/contest/264/problem/C",
+    "submission_id": "CF47373680",
+    "submission_url": "https://codeforces.com/contest/264/submission/47373680",
+    "tags": [
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Dec/22/2018 21:47"
+  },
   "CF47376821": {
     "contest_id": 69,
     "language": "GNU C++17",
