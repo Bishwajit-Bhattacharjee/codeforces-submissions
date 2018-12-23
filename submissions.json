@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF47386850": {
+    "contest_id": 128,
+    "language": "GNU C++17",
+    "path": "codeforces/128/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Games with Rectangle",
+    "problem_url": "https://codeforces.com/contest/128/problem/C",
+    "submission_id": "CF47386850",
+    "submission_url": "https://codeforces.com/contest/128/submission/47386850",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Dec/23/2018 11:40"
+  },
   "CF47389325": {
     "contest_id": 479,
     "language": "GNU C++17",
