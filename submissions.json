@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF47434434": {
+    "contest_id": 156,
+    "language": "GNU C++17",
+    "path": "codeforces/156/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Cipher",
+    "problem_url": "https://codeforces.com/contest/156/problem/C",
+    "submission_id": "CF47434434",
+    "submission_url": "https://codeforces.com/contest/156/submission/47434434",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Dec/23/2018 23:58"
+  },
   "CF47714914": {
     "contest_id": 1096,
     "language": "GNU C++17",
