@@ -32,7 +32,7 @@ ll cnt[90000];
 
 void do_it_babe()
 {
-    int ind = ((rng()) % n) + 1;
+    int ind = ((rand() * RAND_MAX + rand()) % n) + 1;
     //cout << ind << endl;
     if(seen.find(ind) != seen.end()) return ;
     seen.insert(ind);
@@ -83,7 +83,7 @@ int main()
     ios::sync_with_stdio(0);
     cin.tie(0);
  // */
-    //srand(time(0));
+    srand(time(0));
     clock_t ck = clock();
 
     cin >> n;
@@ -92,7 +92,7 @@ int main()
         cin >> ara[i] ;
 
     int cc = 10;
-    while ((clock() - ck) < 3 * CLOCKS_PER_SEC)
+    while ((clock() - ck) < 3.4 * CLOCKS_PER_SEC)
     {
         do_it_babe();
     }
