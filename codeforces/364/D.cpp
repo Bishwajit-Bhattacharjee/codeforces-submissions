@@ -1,103 +1,59 @@
 #include <bits/stdc++.h>
+
 using namespace std;
-typedef long long int ll;
-typedef pair<int, int> PII;
-typedef pair<ll, ll> PLL;
-#define pb push_back
-//#all(x) (x).begin(),(x).end()
-#include <chrono>
 
-int const MOD = 1e9 + 7;
+#define si(a) scanf("%d",&a)
+#define f first
+#define s second
+#define mp(a,b) make_pair(a,b)
+#define ITR 10
+#define MAX 1000005
 
-ll bigmod(ll a, ll b)
-{
-    if (b == 0)
-        return 1 % MOD;
-    ll x = bigmod(a, b / 2);
-    x = (x * x) % MOD;
-    if (b % 2)
-        x = (x * a) % MOD;
-    return x;
-}
-
-int const N = 1e6 + 10;
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-
-vector < ll > ara(1e6 + 10);
+long long ans=1;
+long long ara[MAX];
 int n;
-ll ans;
-set < int > seen;
+vector<long long> divisor;
+int cnt[100005];
+map<long long,int> vis;
 
-ll cnt[90000];
-
-void do_it_babe()
+bool do_it(void)
 {
-    int ind = ((rand() * RAND_MAX + rand()) % n) + 1;
-    //cout << ind << endl;
-    if(seen.find(ind) != seen.end()) return ;
-    seen.insert(ind);
-    ll num = ara[ind] ;
-    vector < ll > divi;
-    //cout << "here" << endl;
-    for(ll x = 1; x * x <= num; x++)
-    {
-        if(num % x == 0 ) {
-            divi.push_back(x);
-            if(num / x != x ){
-                divi.push_back(num/x);
-            }
-        }
-
-    }
-    sort(divi.begin(), divi.end());
-
-    memset(cnt,0,sizeof cnt);
-
-    for(int i = 1; i <= n; i++)
-    {
-        cnt[(int)(lower_bound(divi.begin(),divi.end(),__gcd(num,ara[i]))- divi.begin())]++;
-    }
-
-    for(int i = 0; i < divi.size(); i++)
-    {
-        for(int j = i+1; j < divi.size(); j++)
-        {
-            if(divi[j] % divi[i] == 0)
-            {
-                cnt[i] += cnt[j] ;
-            }
+    long long now=ara[((long long)rand()*1005ll)%n];
+    if(vis[now])return false;
+    vis[now]=1;
+    divisor.clear();
+    for(long long i=1;i*i<=now;i++){
+        if(now%i==0){
+            divisor.push_back(i);
+            if(now!=i*i)divisor.push_back(now/i);
         }
     }
-
-    for(int i = 0; i < divi.size(); i++)
-    {
-        if(cnt[i] * 2 >= n)
-        {
-            ans = max(ans, divi[i]);
+    sort(divisor.begin(),divisor.end());
+    memset(cnt,0,sizeof(cnt));
+    for(int i=0;i<n;i++)cnt[lower_bound(divisor.begin(),divisor.end(),__gcd(now,ara[i]))-divisor.begin()]++;
+    for(int i=1;i<divisor.size();i++){
+        for(int j=0;j<i;j++){
+            if(divisor[i]%divisor[j]==0)
+                cnt[j]+=cnt[i];
         }
     }
-
+    for(int i=0;i<divisor.size();i++)if(2*cnt[i]>=n)ans=max(ans,divisor[i]);
+    return true;
 }
+
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
- // */
-    srand(time(0));
-    clock_t ck = clock();
-
-    cin >> n;
-    //cout << n  << '\n';
-    for(int i = 1; i <= n; i++)
-        cin >> ara[i] ;
-
-    int cc = 10;
-    while ((clock() - ck) < 3.4 * CLOCKS_PER_SEC)
-    {
-        do_it_babe();
+    //freopen("input.txt","r",stdin);
+    si(n);
+    for(int i=0;i<n;i++)scanf("%I64d",&ara[i]);
+    srand(clock());
+    int arek=1005;
+    for(int i=0;i<ITR && arek;i++){
+        if(!do_it()){
+            i--;
+            arek--;
+        }
     }
-    cout << ans << '\n';
-    //while
-
+    cout<<ans<<endl;
     return 0;
 }
