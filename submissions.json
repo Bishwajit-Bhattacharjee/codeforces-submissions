@@ -7350,6 +7350,24 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF52652996": {
+    "contest_id": 843,
+    "language": "GNU C++14",
+    "path": "codeforces/843/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Interactive LowerBound",
+    "problem_url": "https://codeforces.com/contest/843/problem/B",
+    "submission_id": "CF52652996",
+    "submission_url": "https://codeforces.com/contest/843/submission/52652996",
+    "tags": [
+      "brute force",
+      "interactive",
+      "probabilities",
+      "*2000"
+    ],
+    "timestamp": "Apr/12/2019 23:29"
+  },
   "CF52737843": {
     "contest_id": 1153,
     "language": "GNU C++14",
