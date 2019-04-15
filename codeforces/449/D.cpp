@@ -1,74 +1,100 @@
+//HK HK HK HK HK 108 times
 #include <bits/stdc++.h>
+#define PII pair < int , int >
+#define PLL pair < ll, ll >
+#define PI 2.0*acos(0.0)
+#define ll long long int
+#define DEBUG(x) cout << '>' << #x << ':' << x << endl;
+#define all(x) x.begin(),x.end()
+#define sz(x) ((int)x.size())
+#define FOR(i, a, n) for(int i = int (a); i < int (n); i++)
+#define vi vector < int >
+#define pb push_back
+#define ceiling(a, b) (a %b == 0)?(a/b):(a/b)+1
+#define F first
+#define S second
 using namespace std;
-
-typedef long long int ll;
-int const M = 1e9 + 7;
-
-int const N = 21;
-
-ll bigmod(ll a,ll b)
+const int mod = 1e9 + 7 ;
+long long bigmod(long long p,long long e,long long M){
+    long long ret = 1;
+    for(; e > 0; e >>= 1){
+        if(e & 1) ret = (ret * p) % M;
+        p = (p * p) % M;
+    } return ret;
+}
+template <class T> inline T gcd(T a,T b){if(b==0)return a;return gcd(b,a%b);}
+ ll modinverse(ll a,ll M){return bigmod(a,M-2,M);}
+ll bigmod(ll base, ll pow)
 {
-    if(!b) return 1;
-
-    ll x = bigmod(a,b/2) ;
-
-    x = (x * x) % M;
-
-    if(b & 1)
-        x = (x * a) % M;
+    if(pow == 0) return (1 % mod);
+    ll x = bigmod(base, pow/2 );
+    x = ( x * x ) % mod;
+    if(pow % 2 == 1)
+         x = (x * base) % mod;
     return x;
 }
 
+int const N = 50;
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+vector < int > primes;
+bool mark[N] ;
+
+void sieve()
+{
+    for(ll i = 2; i < N ; i++)
+    {
+        if(!mark[i])
+        {
+            for(int j = i * 2; j < N; j += i )
+                 mark[j] = 1;
+        }
+    }
+    for(int i = 2; i < N ; i++)
+        if(!mark[i])
+            primes.pb(i);
+}
+
+int const M = 20;
+
+//ll getMask(string s)
+//{
+//    ll ans = 0;
+//
+//    for(int i = 0; i < s.size();i++)
+//        ans |= ((s[i]-'0') * (1<<i));
+//    return ans;
+//}
+
 int main()
 {
-    ios::sync_with_stdio(0); cin.tie(0);
-
-    vector < ll > p(1<<N,1);
-
-    for(int i = 1; i < (1<<N); i++) p[i] = (p[i-1]*2) % M;
-
-    int n,m;
+    ios::sync_with_stdio(false); cin.tie(0);
+    //sieve();
+    int n;
     cin >> n;
+    vector < ll > v(n),dp(1<<M,0);
 
-    vector < ll > dp(1<<N,0), v(n);
+    for(int i = 0;i < n; i++)
+        cin >> v[i] , dp[v[i]]++;
 
-    for(int i = 0; i < n; i++) cin >> v[i] , dp[v[i]]++;
-
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < M ; i++)
     {
-        for(int m = 0; m < (1<<N); m++)
+        for(int mask = 0; mask < (1<<M); mask++)
         {
-            if(!(m & (1<<i)))
-                dp[m] += dp[m^(1<<i)] ;
-            //dp[m] %= M;
+            if(!(mask & (1<<i)))
+                dp[mask] += dp[mask^(1<<i)] ;
         }
     }
+    ll ans = 0;
 
-    //cout << dp[(1<<N) - 1] << endl;
-
-
-    for(int m = 0; m < (1<<N); m++)
-        dp[m] = ( bigmod(2,dp[m]) - 1 + M) % M;
-
-    ll ans = dp[0];
-
-    //cout << ans << endl;
-
-    int par = 0;
-
-    for(int msk = 1; msk < (1<<N); msk++)
+    for(int mask = 0; mask < (1<<M); mask++)
     {
-        //cout << dp[m] << " ";
-        if((__builtin_popcount(msk) & 1)  == par) {
-            ans += dp[msk] ;
-        }
-        else
-            ans -= dp[msk] ;
-
-        ans %= M;
+        ll tmp = bigmod(2,dp[mask]);
+        if(__builtin_popcount(mask) % 2 )
+            tmp *= -1;
+        ans = (ans + mod + tmp ) % mod ;
     }
-
-    cout << (ans + M) % M << endl;
+    cout << ans << '\n';
 
     return 0;
 }

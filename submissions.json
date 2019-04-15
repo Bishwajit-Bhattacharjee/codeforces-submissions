@@ -11983,6 +11983,24 @@
     ],
     "timestamp": "Apr/14/2019 20:28"
   },
+  "CF52772886": {
+    "contest_id": 449,
+    "language": "GNU C++14",
+    "path": "codeforces/449/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Jzzhu and Numbers",
+    "problem_url": "https://codeforces.com/contest/449/problem/D",
+    "submission_id": "CF52772886",
+    "submission_url": "https://codeforces.com/contest/449/submission/52772886",
+    "tags": [
+      "bitmasks",
+      "combinatorics",
+      "dp",
+      "*2400"
+    ],
+    "timestamp": "Apr/15/2019 16:12"
+  },
   "CF52944217": {
     "contest_id": 598,
     "language": "GNU C++14",
