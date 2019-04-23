@@ -11983,6 +11983,24 @@
     ],
     "timestamp": "Apr/14/2019 20:28"
   },
+  "CF53195272": {
+    "contest_id": 351,
+    "language": "GNU C++14",
+    "path": "codeforces/351/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Jeff and Furik",
+    "problem_url": "https://codeforces.com/contest/351/problem/B",
+    "submission_id": "CF53195272",
+    "submission_url": "https://codeforces.com/contest/351/submission/53195272",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "probabilities",
+      "*1900"
+    ],
+    "timestamp": "Apr/23/2019 20:55"
+  },
   "CF53196086": {
     "contest_id": 846,
     "language": "GNU C++14",
