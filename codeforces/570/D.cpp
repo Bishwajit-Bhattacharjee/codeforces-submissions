@@ -1,114 +1,75 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int const N = 5e5 + 10;
-int const MOD = 1e8 + 7;
-int const INF = 1e9;
-
-typedef long long ll;
 typedef pair<int,int> PII;
-
-vector <int> g[N] ;
-vector < PII > q[N] ;
-int val[N] , sub[N], lvl[N];
-int ans[N] ;
-int st[N], en[N], id[N] ;
-int cur;
-int cnt[N] ;
-
-void pre(int u, int l = 1){
-
-    st[u] = ++cur;
-    id[cur] = u;
+map < int, int > *mask[N] ;
+vector < int > nq[N];
+vector < int > g[N];
+char ch[N] ;
+int sub[N] ;
+vector <int> ans(N);
+vector < PII > q(N);
+int lvl[N] ;
+void dfs(int u, int l)
+{
+    int big = -1, mx = -1;
     sub[u] = 1;
     lvl[u] = l;
-
-    for(auto x : g[u]){
-        pre(x,l+1);
-        sub[u] += sub[x];
+    for(auto v : g[u])
+    {
+        dfs(v,l+1);
+        sub[u] += sub[v];
+        if(sub[v] > mx) mx = sub[v], big = v;
     }
-    en[u] = cur;
-}
-void dfs(int u,int l, bool keep )
-{
-    //cout << "here " << u << " " << l << endl;
-
-    int big = -1, mx = -1;
-
-    for(auto v : g[u]){
-        if(sub[v] > mx){
-            mx = sub[v] ;
-            big = v;
-        }
+    if(big == -1){
+        mask[u] = new map < int,int>();
     }
+    else{
+        mask[u] = mask[big];
+    }
+    int can = (1<<(ch[u] -'a'));
+    (*mask[u])[l] ^= can;
 
     for(auto v : g[u]){
         if(v != big){
-            dfs(v,l+1,0);
+            for(auto x : *mask[v]){
+                (*mask[u])[x.first] ^= x.second;
+            }
         }
     }
-    
-    if(big != -1)
-        dfs(big,l+1,1);
-
-    cnt[lvl[u]] ^= (1<<val[u]);
-
-    for(auto v : g[u]){
-        if(v == big) continue;
-        for(int tt = st[v]; tt <= en[v]; tt++){
-            cnt[lvl[id[tt]]] ^= (1<<val[id[tt]]);
+    for(auto ind : nq[u]){
+        if(!(*mask[u]).count(q[ind].second)){
+            ans[ind] = 1;
         }
-    }
-    for(auto x : q[u]){
-        ans[x.second] = (__builtin_popcount((cnt[x.first])) <= 1);
+        else
+            ans[ind] = ( (__builtin_popcount((*mask[u])[q[ind].second])) <= 1);
     }
 
-    if(!keep){
-        for(int tt = st[u]; tt <= en[u]; tt++){
-            cnt[lvl[id[tt]]] ^= (1<<val[id[tt]]);
-        }
-    }
 }
 int main()
 {
     ios::sync_with_stdio(0); cin.tie(0);
 
     int n, m ;
-    cin >> n >> m;
+    cin >> n >> m ;
 
-    for(int i = 2; i <= n; i++){
-        int t;
-        cin >> t;
-        g[t].push_back(i);
-        //g[i].push_back(t);
+    for(int i = 1; i <= n - 1; i++){
+        int tmp;
+        cin >> tmp;
+        g[tmp].push_back(i+1);
     }
-    pre(1);
+    for(int i = 1; i <= n; i++)
+        cin >> ch[i] ;
 
-    string s;
-    cin >> s;
-    //cout << s << endl;
+    for(int i = 0; i < m; i++)
+        cin >> q[i].first >> q[i].second, nq[q[i].first].push_back(i);
 
-    for(int i = 0; i < s.size(); i++)
-        val[i+1] = (s[i]-'a');
+    dfs(1,1);
 
-    for(int i = 1; i <= m; i++){
-        int v,h;
-        cin >> v >> h;
-        //cout << v << " " << h << endl;
-        q[v].push_back({h,i});
-        
-    }    
-    //pre(1,1);
-    dfs(1,1,0);
-
-    for(int i = 1; i <= m; i++){
-        if(ans[i]){
-            cout << "Yes\n";
-        }
-        else 
-            cout << "No\n";
+    for(int i = 0; i < m; i++)
+    {
+        cout << ((ans[i])?"Yes":"No") << '\n';
     }
-
 
     return 0;
 }
