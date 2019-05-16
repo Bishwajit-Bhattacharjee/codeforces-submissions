@@ -11983,6 +11983,25 @@
     ],
     "timestamp": "Apr/14/2019 20:28"
   },
+  "CF54223386": {
+    "contest_id": 343,
+    "language": "GNU C++17",
+    "path": "codeforces/343/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Water Tree",
+    "problem_url": "https://codeforces.com/contest/343/problem/D",
+    "submission_id": "CF54223386",
+    "submission_url": "https://codeforces.com/contest/343/submission/54223386",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "graphs",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "May/16/2019 10:57"
+  },
   "CF54231150": {
     "contest_id": 741,
     "language": "GNU C++17",
