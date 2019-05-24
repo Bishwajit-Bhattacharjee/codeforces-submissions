@@ -119,7 +119,7 @@ int main()
     build(1,1,n);
     int q;
     cin >> q;
-    assert(tt >= n);
+    //assert(tt >= n);
 //    for(int i = 1; i <= n; i++)
 //        cout << i << " " << st[i] << " " << en[i] << endl;
     while(q--){
