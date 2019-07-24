@@ -11983,6 +11983,24 @@
     ],
     "timestamp": "Apr/14/2019 20:28"
   },
+  "CF57648659": {
+    "contest_id": 1196,
+    "language": "GNU C++17",
+    "path": "codeforces/1196/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Three Piles of Candies",
+    "problem_url": "https://codeforces.com/contest/1196/problem/A",
+    "submission_id": "CF57648659",
+    "submission_url": "https://codeforces.com/contest/1196/submission/57648659",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jul/24/2019 20:40"
+  },
   "CF57656006": {
     "contest_id": 1196,
     "language": "GNU C++17",
