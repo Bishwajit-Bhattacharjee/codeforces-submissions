@@ -11983,6 +11983,22 @@
     ],
     "timestamp": "Apr/14/2019 20:28"
   },
+  "CF60056365": {
+    "contest_id": 1213,
+    "language": "GNU C++17",
+    "path": "codeforces/1213/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Chips Moving",
+    "problem_url": "https://codeforces.com/contest/1213/problem/A",
+    "submission_id": "CF60056365",
+    "submission_url": "https://codeforces.com/contest/1213/submission/60056365",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Sep/05/2019 10:29"
+  },
   "CF60056528": {
     "contest_id": 1213,
     "language": "GNU C++17",
