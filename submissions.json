@@ -11983,6 +11983,24 @@
     ],
     "timestamp": "Apr/14/2019 20:28"
   },
+  "CF66412537": {
+    "contest_id": 1038,
+    "language": "GNU C++17",
+    "path": "codeforces/1038/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Slime",
+    "problem_url": "https://codeforces.com/contest/1038/problem/D",
+    "submission_id": "CF66412537",
+    "submission_url": "https://codeforces.com/contest/1038/submission/66412537",
+    "tags": [
+      "dp",
+      "greedy",
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "Dec/06/2019 21:50"
+  },
   "CF66416128": {
     "contest_id": 1243,
     "language": "GNU C++17",
