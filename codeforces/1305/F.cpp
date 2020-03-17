@@ -58,7 +58,7 @@ int main(){
 
     shuffle(v.begin(), v.end(), rng);
 
-    int how_many = 20;
+    int how_many = 30;
     ll ans = n;
 
     for(int i = 0; i < min(how_many,n); i++){
