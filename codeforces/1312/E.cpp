@@ -6,7 +6,7 @@ bool vis1[N][N] , vis2[N][N];
 int dp1[N][N], dp2[N][N] ;
 int n;
 
-int side_chick(int l, int r){
+int side_chick_DP(int l, int r){
     if(l > r) return -1;
     if(l == r) return v[l] ;
     if(vis2[l][r]) return dp2[l][r];
@@ -15,14 +15,14 @@ int side_chick(int l, int r){
     int &ret = dp2[l][r] ;
     ret = -1;
     for(int k = l; k < r; k++){
-        if(side_chick(l,k) != -1 and side_chick(l,k) == side_chick(k+1,r)){
-            ret = side_chick(l,k) + 1;
+        if(side_chick_DP(l,k) != -1 and side_chick_DP(l,k) == side_chick_DP(k+1,r)){
+            ret = side_chick_DP(l,k) + 1;
         }
     }
     return ret;
 }
 
-int gf(int l,int r){
+int DP(int l,int r){
     if(l == r) return 1;
     if(l > r) return 0;
     if(vis1[l][r]) return dp1[l][r];
@@ -30,9 +30,9 @@ int gf(int l,int r){
     int ans = INT_MAX;
     vis1[l][r] = 1;
     for(int k = l; k < r; k++){
-        ans = min(ans, gf(l,k)+gf(k+1,r) );
+        ans = min(ans, DP(l,k)+DP(k+1,r) );
     }
-    if(side_chick(l,r) > 0 ) {
+    if(side_chick_DP(l,r) > 0 ) {
         ans = min(ans,1);
     }
     return dp1[l][r] = ans;
@@ -46,7 +46,7 @@ void solve(int n){
     memset(vis1,0,sizeof vis1);
     memset(vis2,0,sizeof vis2);
 
-    cout << gf(1,n) << endl;
+    cout << DP(1,n) << endl;
     
 }
 int main(){
