@@ -8,6 +8,10 @@ while t > 0:
         if tmp <= n : 
             ans = 1
 
-    print(["YES","NO"][1-ans])
+    if ans == 1 : 
+        print("YES")
+    else :
+        print("NO")
+
     t -= 1
 
