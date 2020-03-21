@@ -7350,6 +7350,25 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF73879497": {
+    "contest_id": 1288,
+    "language": "PyPy 3",
+    "path": "codeforces/1288/A.py",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Deadline",
+    "problem_url": "https://codeforces.com/contest/1288/problem/A",
+    "submission_id": "CF73879497",
+    "submission_url": "https://codeforces.com/contest/1288/submission/73879497",
+    "tags": [
+      "binary search",
+      "brute force",
+      "math",
+      "ternary search",
+      "*1100"
+    ],
+    "timestamp": "Mar/21/2020 17:04"
+  },
   "CF73880006": {
     "contest_id": 1288,
     "language": "PyPy 3",
