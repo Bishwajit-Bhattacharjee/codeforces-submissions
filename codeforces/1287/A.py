@@ -2,11 +2,18 @@
 def solve():
     n = int(input())
     s = str(input())
-    
-    s = s.lstrip('P')
-    #print(s.split('A'))
-    ans = max ( map(lambda x : len(x) ,s.split('A')) )
+    ans = 0
+    cnt = 0
+    found = False
+    for id in range(n) :
+        if s[id] == 'P' : cnt += 1
+        else :
+            if found : ans = max(ans,cnt)
+            found = True
+            cnt = 0
+    if found : ans = max(ans,cnt)
     print(ans)
+
 
 t = int(input())
 for _ in range(t): 
