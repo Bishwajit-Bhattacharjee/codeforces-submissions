@@ -9,16 +9,37 @@ def precalc():
     for i in range(1,N) :
         for j in range(i,N,i) :
             divi[j].append(i)
-        if i == 1 : u[i] = 1
-        elif (i//divi[i][1]) % divi[i][1] == 0 : u[i] = 0
-        else : u[i] = -u[i//divi[i][1]]
+
+    for i in range(2,N) : 
+        if mark[i] == 1 : 
+            continue
+        for j in range(i,N,i) :
+            pd[j].append(i)
+            mark[j] = 1
+
+    for i in range(1,N) : 
+        for prm in pd[i] :
+            time = 0
+            _i = i 
+            while _i % prm == 0 : 
+                time += 1
+                _i /= prm
+            if time > 1 :
+                u[i] = 0
+                continue
+        if u[i] == -1 : 
+            if len(pd[i]) & 1 :
+                u[i] = -1
+            else : 
+                u[i] = 1
     
 has = [False]*N 
 cnt = [0]*N
 
 def has_coprime(n):
     ret = 0
-    for d in divi[n] : ret += u[d] * cnt[d]
+    for d in divi[n] :
+        ret += u[d] * cnt[d]
     return ret
 
 def update(n,val) :
@@ -30,13 +51,14 @@ def solve(n) :
     li = list(map(int,input().split()))
     ans = 0
     for i in range(n) : 
-        if has[li[i]] : ans = max(ans,li[i])
+        if has[li[i]] : 
+            ans = max(ans,li[i])
         has[li[i]] = True
 
     for g in range(1,N) :
         st = [] 
         for num in reversed(range(1,N//g + 1)) :
-            if num*g > N-1 or not has[num*g] : 
+            if num*g > N-1 or not has[num*g]  : 
                 continue
             how_many = has_coprime(num)
 
