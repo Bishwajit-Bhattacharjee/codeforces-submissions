@@ -7350,6 +7350,24 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF74107419": {
+    "contest_id": 1285,
+    "language": "PyPy 3",
+    "path": "codeforces/1285/F.py",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Classical?",
+    "problem_url": "https://codeforces.com/contest/1285/problem/F",
+    "submission_id": "CF74107419",
+    "submission_url": "https://codeforces.com/contest/1285/submission/74107419",
+    "tags": [
+      "binary search",
+      "combinatorics",
+      "number theory",
+      "*2900"
+    ],
+    "timestamp": "Mar/23/2020 21:59"
+  },
   "CF74130060": {
     "contest_id": 1287,
     "language": "PyPy 3",
