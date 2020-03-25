@@ -1,8 +1,5 @@
-import io
-import os
 import sys
-from io import BytesIO
-input = io.BytesIO(os.read(0, os.fstat(0).st_size)).readline
+input = sys.stdin.readline
 
 def solve() :
     n = int(input())
@@ -14,7 +11,8 @@ def solve() :
             if  cur in kingdom_left : 
                 kingdom_left.remove(cur)
                 break
-        else :  left.append(_+1)
+        else :
+            left.append(_+1)
 
     if len(left) and len(kingdom_left):
         print("IMPROVE\n{} {}".format(left[-1],kingdom_left.pop()))
