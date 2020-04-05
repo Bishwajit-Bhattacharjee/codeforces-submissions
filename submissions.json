@@ -7350,6 +7350,24 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF75581502": {
+    "contest_id": 1220,
+    "language": "GNU C++17",
+    "path": "codeforces/1220/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Alex and Julian",
+    "problem_url": "https://codeforces.com/contest/1220/problem/D",
+    "submission_id": "CF75581502",
+    "submission_url": "https://codeforces.com/contest/1220/submission/75581502",
+    "tags": [
+      "bitmasks",
+      "math",
+      "number theory",
+      "*1900"
+    ],
+    "timestamp": "Apr/05/2020 21:02"
+  },
   "CF75595288": {
     "contest_id": 1220,
     "language": "GNU C++17",
