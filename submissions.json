@@ -7350,6 +7350,24 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF75743213": {
+    "contest_id": 1230,
+    "language": "GNU C++17",
+    "path": "codeforces/1230/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Kamil and Making a Stream",
+    "problem_url": "https://codeforces.com/contest/1230/problem/E",
+    "submission_id": "CF75743213",
+    "submission_url": "https://codeforces.com/contest/1230/submission/75743213",
+    "tags": [
+      "math",
+      "number theory",
+      "trees",
+      "*2000"
+    ],
+    "timestamp": "Apr/07/2020 18:26"
+  },
   "CF75779363": {
     "contest_id": 1230,
     "language": "GNU C++17",
