@@ -5,11 +5,22 @@ int const N = 1e5 + 10;
 vector<ll> primes;
 vector<bool>mark(N,0);
 int const MOD = 1e9 + 7;
+void sieve(){
 
+    for(int i = 2; i < N ; i++){
+        if(!mark[i]){
+            for(int j = 2*i; j < N ; j += i) mark[j] = 1;
+        }
+    }
+    for(int i = 2; i < N; i++) 
+        if(!mark[i]) 
+            primes.push_back(i);
+
+}
 
 vector<ll> factorize(ll n){
     vector<ll> v;
-    for(ll x = 2; x * x <= n; x++){
+    for(auto x : primes){
         if(n % x == 0){
             while(n % x == 0) n /= x;
             v.push_back(x);
@@ -31,7 +42,7 @@ ll bigmod(ll a, ll b , ll mod = MOD){
 int main(){
     ll x,n;
     cin >> x >> n;
-    //sieve();
+    sieve();
     vector <ll> pd = factorize(x);
     ll ans = 1;
     for(auto x : pd){
