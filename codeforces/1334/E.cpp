@@ -55,8 +55,8 @@ ll modinv(ll num){
 }
 
 int const N = sqrt(1e15) + 100;
-//vector < ll > primes;
-//bitset <90000000> mark;
+vector < ll > primes;
+bitset <90000000> mark;
 map<ll, vector<PLL> > prime_factors;
 
 void sieve()
@@ -66,27 +66,26 @@ void sieve()
 	for(int i = 1; i < MX; i++)
 		factorial[i] = (factorial[i-1]*i) % MOD;
     //marks.resize(n+10,0);
-	inv[MX-1] = modinv(factorial[MX-1]);
-	for(ll i = MX - 2; i >=0; i--)
-		inv[i] = (inv[i+1]*(i+1)) % MOD; 
-		//inv[i] = modinv(factorial[i]);
 
-	// mark.reset();
+	for(ll i = 0; i < MX; i++) 
+		inv[i] = modinv(factorial[i]);
 
-	// for(ll i = 2; i * i < N; i++){
-	// 	if(mark[i]) continue;
-	// 	for(ll j = i * i; j < N ; j += i){
-	// 		mark[j] = 1;
-	// 	}
-	// }
-	// for(int i = 2; i < N ; i++) 
-	// 	if(!mark[i]) primes.push_back(i);
+	mark.reset();
+
+	for(ll i = 2; i * i < N; i++){
+		if(mark[i]) continue;
+		for(ll j = i * i; j < N ; j += i){
+			mark[j] = 1;
+		}
+	}
+	for(int i = 2; i < N ; i++) 
+		if(!mark[i]) primes.push_back(i);
 }
 vector<PLL> pd;
 void factorization(ll n){
 	
 	pd.clear();
-	for(ll x = 2; x * x <= n; x++){
+	for(auto x : primes){
 		//if(n < x) break;
 		if(n % x == 0){
 			int cnt = 0;
