@@ -61,10 +61,6 @@ PLL pair_big_mod(ll a, PLL b)
 	return PLL(bigmod(p,a,b.F), bigmod(p,a,b.S));
 }
 
-int const N = 5e6;
-
-vector<int>cnt(N,0);
-
 int main(){
 
 	ios::sync_with_stdio(false); cin.tie(0);
@@ -73,49 +69,31 @@ int main(){
 
 	while(t--){
 		ll ans = 0;
+		
 		cin >> n >> p;
+
 		vector<int>v(n);
+
 		for(int i = 0; i < n; i++) cin >> v[i] ;
+
+		PLL s = PLL(0,0);
+
 		sort(v.rbegin(),v.rend());
 
-		if(p == 1){
-			cout << (n & 1) << '\n';
-			continue;
-		}
-		vector<int>trace;
-
-		for(int i = 0; i < n;){
-			ans = (ans + bigmod(p,v[i])) ;
-			if(ans >= MOD ) ans -= MOD;
-			int j = i + 1;
-
-			while(j < n){
-				ans = (ans - bigmod(p,v[j]) + MOD);
-				if(ans >= MOD ) ans -= MOD;
-				
-				cnt[v[j]]++;
-				trace.push_back(v[j]);
-				int k = v[j] ;
-
-				while(cnt[k] == p){
-					cnt[k] -= p;
-					cnt[k+1]++;
-					k++;
-					trace.push_back(k);
-				}
-
-				if(k == v[i]){
-					cnt[k]--;
-					i = j + 1;
-					break;
-				}
-				j++;
+		for(auto x : v){
+			if(ans == 0 and s == PLL(0LL,0LL)) {
+				s = s + pair_big_mod(x,M);
+				s = s % M;
+				ans += bigmod(p,x);
+				ans %= MOD;
 			}
-			if(j >= n) break;
+			else {
+				s = s + M - pair_big_mod(x,M);
+				s = s % M;
+				ans = (ans - bigmod(p,x) + MOD) % MOD ;
+				//ans %= MOD;
+			}
 		}
-
-		for(auto x : trace) cnt[x] = 0;
-
 		cout << ans << '\n';
 	}
 		
