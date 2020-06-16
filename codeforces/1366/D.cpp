@@ -47,11 +47,11 @@ ll bigmod(ll a, ll b){
 		x = (x * a) %MOD;
 	return x;
 }
-int const N = 1e7 + 10;
+int const N = 1e4 + 10;
 vector<int>primes;
 
 vector < bool > marks;
-int mindivi[N] ;
+vector<int> divi[N] ;
 
 
 void sieve(int n)
@@ -61,10 +61,10 @@ void sieve(int n)
 	for(int i = 2; i < n; i++){
 		
 		if(!marks[i]){
-			mindivi[i] = i;
+			divi[i].push_back(i);
 			for(int j = 2*i; j < n; j += i){
 				marks[j] = 1;
-				mindivi[j] = min(mindivi[j],i);
+				if(divi[j].empty()) divi[j].push_back(i);
 			}
 			primes.push_back(i);
 		}
@@ -76,8 +76,7 @@ void sieve(int n)
 int main(){
 
 	ios::sync_with_stdio(false); cin.tie(0);
-
-	memset(mindivi,0x3f,sizeof mindivi);		
+	
 	sieve(N);
 
 	int n;
@@ -96,19 +95,19 @@ int main(){
 
 		int tmp = v[i];
 
-		// for(auto x : primes) {
-		// 	if(x * x > tmp) break;
-		// 	if(tmp % x == 0){
-		// 		while(tmp % x == 0) tmp /= x;
-		// 		pds.push_back(x);
-		// 	}	
-		// }
-		// if(tmp != 1) pds.push_back(tmp);
-		while(mindivi[tmp] < N ){
-			int cd = mindivi[tmp];
-			pds.push_back(cd);
-			while(tmp % cd == 0) tmp /= cd;
+		for(auto x : primes) {
+			if(x * x > tmp) break;
+			if(tmp % x == 0){
+				while(tmp % x == 0) tmp /= x;
+				pds.push_back(x);
+			}	
 		}
+		if(tmp != 1) pds.push_back(tmp);
+		// while(!divi[tmp].empty()){
+		// 	int cd = divi[tmp][0] ;
+		// 	pds.push_back(cd);
+		// 	while(tmp % cd == 0) tmp /= cd;
+		// }
 
 		ll tot = 1;
 
