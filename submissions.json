@@ -7350,6 +7350,24 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF90323093": {
+    "contest_id": 1398,
+    "language": "GNU C++17",
+    "path": "codeforces/1398/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Good Subarrays",
+    "problem_url": "https://codeforces.com/contest/1398/problem/C",
+    "submission_id": "CF90323093",
+    "submission_url": "https://codeforces.com/contest/1398/submission/90323093",
+    "tags": [
+      "data structures",
+      "dp",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Aug/18/2020 21:35"
+  },
   "CF90331380": {
     "contest_id": 1398,
     "language": "GNU C++17",
