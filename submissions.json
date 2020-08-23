@@ -7350,6 +7350,25 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF90764180": {
+    "contest_id": 1401,
+    "language": "GNU C++17",
+    "path": "codeforces/1401/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Divide Square",
+    "problem_url": "https://codeforces.com/contest/1401/problem/E",
+    "submission_id": "CF90764180",
+    "submission_url": "https://codeforces.com/contest/1401/submission/90764180",
+    "tags": [
+      "data structures",
+      "geometry",
+      "implementation",
+      "sortings",
+      "*2400"
+    ],
+    "timestamp": "Aug/23/2020 20:36"
+  },
   "CF90782483": {
     "contest_id": 1401,
     "language": "GNU C++17",
