@@ -7350,6 +7350,24 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF90782483": {
+    "contest_id": 1401,
+    "language": "GNU C++17",
+    "path": "codeforces/1401/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Reverse and Swap",
+    "problem_url": "https://codeforces.com/contest/1401/problem/F",
+    "submission_id": "CF90782483",
+    "submission_url": "https://codeforces.com/contest/1401/submission/90782483",
+    "tags": [
+      "binary search",
+      "bitmasks",
+      "data structures",
+      "*2400"
+    ],
+    "timestamp": "Aug/24/2020 01:57"
+  },
   "CF90855822": {
     "contest_id": 1398,
     "language": "GNU C++17",
