@@ -19,33 +19,28 @@ void KMP(string &s){
 
     for(int i = 0; i <= s.size(); i++){
         for(int c = 0; c < ALPHA; c++){
-            if(s[i] == ('a'+c)) aut[i][c] = i+1;
+            if(i < s.size() and s[i] == ('a'+c)) aut[i][c] = i+1;
             else if(!i) aut[i][c] = 0;
             else aut[i][c] = aut[pi[i-1]+1][c] ;
         }
     }
 }
 ll DP(int pos, int state){
-    assert(state != t.size());
-    if(pos == s.size()) return 0;
+    if(pos == s.size()) return state == t.size();
     ll &ret = dp[pos][state];
     if(ret != -1) return ret;
-    ret = 0;
+    ret = (t.size() == state);
     if(s[pos] != '?'){
         int nxt = aut[state][s[pos]-'a'];
-        if(nxt == t.size()) {
-            ret = 1 + DP(pos+1, pi[nxt-1]+1);
-        }
-        else ret = DP(pos+1, nxt);
+        ret += DP(pos+1, nxt);
         return ret;
     }
+    ll mx = 0;
     for(int ch = 0; ch < ALPHA; ch++){
         int nxt = aut[state][ch];
-        if(nxt == t.size()){
-            ret = max(ret,1 + DP(pos+1, pi[nxt-1] + 1));
-        }
-        else ret = max(ret, DP(pos+1, nxt));
+        mx = max(mx, DP(pos+1, nxt));
     }
+    ret += mx;
     return ret;
 }
 int main(){
