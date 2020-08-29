@@ -7350,6 +7350,23 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF91296409": {
+    "contest_id": 808,
+    "language": "GNU C++17",
+    "path": "codeforces/808/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Anthem of Berland",
+    "problem_url": "https://codeforces.com/contest/808/problem/G",
+    "submission_id": "CF91296409",
+    "submission_url": "https://codeforces.com/contest/808/submission/91296409",
+    "tags": [
+      "dp",
+      "strings",
+      "*2300"
+    ],
+    "timestamp": "Aug/29/2020 21:42"
+  },
   "CF91508435": {
     "contest_id": 118,
     "language": "GNU C++17",
