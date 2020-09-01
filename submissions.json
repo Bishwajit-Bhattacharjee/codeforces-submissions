@@ -7350,6 +7350,25 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF91590141": {
+    "contest_id": 1385,
+    "language": "GNU C++17",
+    "path": "codeforces/1385/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Removing Leaves",
+    "problem_url": "https://codeforces.com/contest/1385/problem/F",
+    "submission_id": "CF91590141",
+    "submission_url": "https://codeforces.com/contest/1385/submission/91590141",
+    "tags": [
+      "data structures",
+      "greedy",
+      "implementation",
+      "trees",
+      "*2300"
+    ],
+    "timestamp": "Sep/01/2020 23:49"
+  },
   "CF91662348": {
     "contest_id": 1385,
     "language": "GNU C++17",
