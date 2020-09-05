@@ -7350,6 +7350,22 @@
     ],
     "timestamp": "Apr/12/2019 21:51"
   },
+  "CF91948999": {
+    "contest_id": 1382,
+    "language": "GNU C++17",
+    "path": "codeforces/1382/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Unmerge",
+    "problem_url": "https://codeforces.com/contest/1382/problem/D",
+    "submission_id": "CF91948999",
+    "submission_url": "https://codeforces.com/contest/1382/submission/91948999",
+    "tags": [
+      "dp",
+      "*1800"
+    ],
+    "timestamp": "Sep/05/2020 20:35"
+  },
   "CF91956151": {
     "contest_id": 1382,
     "language": "GNU C++17",
