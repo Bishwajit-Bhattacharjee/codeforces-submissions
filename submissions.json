@@ -1265,6 +1265,26 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF92424532": {
+    "contest_id": 1380,
+    "language": "GNU C++17",
+    "path": "codeforces/1380/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Create The Teams",
+    "problem_url": "https://codeforces.com/contest/1380/problem/C",
+    "submission_id": "CF92424532",
+    "submission_url": "https://codeforces.com/contest/1380/submission/92424532",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Sep/10/2020 18:11"
+  },
   "CF92448951": {
     "contest_id": 1380,
     "language": "GNU C++17",
