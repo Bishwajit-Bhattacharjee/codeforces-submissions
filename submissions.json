@@ -1265,6 +1265,26 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF92717861": {
+    "contest_id": 1369,
+    "language": "GNU C++17",
+    "path": "codeforces/1369/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "DeadLee",
+    "problem_url": "https://codeforces.com/contest/1369/problem/E",
+    "submission_id": "CF92717861",
+    "submission_url": "https://codeforces.com/contest/1369/submission/92717861",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*2400"
+    ],
+    "timestamp": "Sep/13/2020 19:27"
+  },
   "CF92721924": {
     "contest_id": 1371,
     "language": "GNU C++17",
