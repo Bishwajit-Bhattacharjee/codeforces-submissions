@@ -16,8 +16,8 @@ void update(int pos, int val){
 int K_th(int cum){
     int ans = 0, tot = 0;
     for(int pos = 20; pos >=0 ; pos--){
-        if( (ans ^ (1 << pos)) >= N) continue;
-        if( tot + t[ ans ^ (1 << pos) ] < cum ) ans ^= ( 1 << pos ), tot += t[ans] ;
+        if( (1 << pos) >= N) continue;
+        if( tot + t[ 1 << pos ] < cum ) ans ^= ( 1 << pos ), tot += t[1 << pos] ;
     }
     return ans + 1;
 }
@@ -47,7 +47,7 @@ int main(){
         }
         else {
             tmp *= -1;
-            int kpos = K_th(tmp);
+            int kpos = k_b(tmp);
             // cout << kpos << endl;
             update(kpos, -1 );
         }
