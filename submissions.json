@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF93070294": {
+    "contest_id": 1354,
+    "language": "GNU C++17",
+    "path": "codeforces/1354/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Multiset",
+    "problem_url": "https://codeforces.com/contest/1354/problem/D",
+    "submission_id": "CF93070294",
+    "submission_url": "https://codeforces.com/contest/1354/submission/93070294",
+    "tags": [
+      "binary search",
+      "data structures",
+      "*1900"
+    ],
+    "timestamp": "Sep/18/2020 00:08"
+  },
   "CF93104697": {
     "contest_id": 1360,
     "language": "GNU C++17",
