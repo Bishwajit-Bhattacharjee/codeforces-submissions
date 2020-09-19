@@ -1265,6 +1265,24 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF93192137": {
+    "contest_id": 1354,
+    "language": "GNU C++17",
+    "path": "codeforces/1354/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Find a Gift",
+    "problem_url": "https://codeforces.com/contest/1354/problem/G",
+    "submission_id": "CF93192137",
+    "submission_url": "https://codeforces.com/contest/1354/submission/93192137",
+    "tags": [
+      "binary search",
+      "interactive",
+      "probabilities",
+      "*2600"
+    ],
+    "timestamp": "Sep/19/2020 18:42"
+  },
   "CF93326502": {
     "contest_id": 1419,
     "language": "GNU C++17",
