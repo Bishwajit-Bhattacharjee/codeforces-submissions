@@ -29,7 +29,7 @@ int main(){
         int mid = (lo + hi) >> 1;
         // cout << mid << " " << cost(mid) << endl;
         // cout << mid + 1 << " " << cost(mid + 1) << endl;
-        if(cost(mid) > cost(mid + 1)) lo = mid + 1;
+        if(cost(mid) > cost(mid + 1)) lo = mid;
         else hi = mid;  
     }
     ll ans = 1e18;
