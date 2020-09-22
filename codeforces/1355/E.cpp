@@ -25,16 +25,15 @@ int main(){
     sort(h.begin(), h.end());
     int lo = h[0], hi = h.back();
 
-    while(lo < hi){
+    while(lo + 3 <  hi){
         int mid = (lo + hi) >> 1;
         // cout << mid << " " << cost(mid) << endl;
         // cout << mid + 1 << " " << cost(mid + 1) << endl;
         if(cost(mid) > cost(mid + 1)) lo = mid + 1;
         else hi = mid;  
     }
-    // ll ans = 1e18;
-    // for(int i = lo ; i <= hi; i++) ans = min(ans, cost(i));
-    // cout << ans << '\n';
-    cout << cost(lo) << '\n';
+    ll ans = 1e18;
+    for(int i = lo ; i <= hi; i++) ans = min(ans, cost(i));
+    cout << ans << '\n';
     return 0;
 }
