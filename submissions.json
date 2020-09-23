@@ -1265,6 +1265,25 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF93578639": {
+    "contest_id": 1349,
+    "language": "GNU C++17",
+    "path": "codeforces/1349/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Orac and Game of Life",
+    "problem_url": "https://codeforces.com/contest/1349/problem/C",
+    "submission_id": "CF93578639",
+    "submission_url": "https://codeforces.com/contest/1349/submission/93578639",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "shortest paths",
+      "*2000"
+    ],
+    "timestamp": "Sep/23/2020 22:01"
+  },
   "CF93790158": {
     "contest_id": 1420,
     "language": "GNU C++17",
