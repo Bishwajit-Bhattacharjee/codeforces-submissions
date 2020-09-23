@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF93534894": {
+    "contest_id": 1353,
+    "language": "GNU C++17",
+    "path": "codeforces/1353/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Decreasing Heights",
+    "problem_url": "https://codeforces.com/contest/1353/problem/F",
+    "submission_id": "CF93534894",
+    "submission_url": "https://codeforces.com/contest/1353/submission/93534894",
+    "tags": [
+      "brute force",
+      "dp",
+      "*2200"
+    ],
+    "timestamp": "Sep/23/2020 12:35"
+  },
   "CF93553942": {
     "contest_id": 1350,
     "language": "GNU C++17",
