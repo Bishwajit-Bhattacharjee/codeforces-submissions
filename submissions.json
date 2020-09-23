@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF93553942": {
+    "contest_id": 1350,
+    "language": "GNU C++17",
+    "path": "codeforces/1350/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Orac and LCM",
+    "problem_url": "https://codeforces.com/contest/1350/problem/C",
+    "submission_id": "CF93553942",
+    "submission_url": "https://codeforces.com/contest/1350/submission/93553942",
+    "tags": [
+      "math",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Sep/23/2020 17:17"
+  },
   "CF93554302": {
     "contest_id": 1350,
     "language": "GNU C++17",
