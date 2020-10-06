@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF94844449": {
+    "contest_id": 1408,
+    "language": "GNU C++17",
+    "path": "codeforces/1408/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Two Different",
+    "problem_url": "https://codeforces.com/contest/1408/problem/F",
+    "submission_id": "CF94844449",
+    "submission_url": "https://codeforces.com/contest/1408/submission/94844449",
+    "tags": [
+      "constructive algorithms",
+      "divide and conquer",
+      "*2300"
+    ],
+    "timestamp": "Oct/06/2020 17:39"
+  },
   "CF94848971": {
     "contest_id": 1422,
     "language": "GNU C++17",
