@@ -19,7 +19,7 @@ int main(){
     auto dist = [cel]( int i, int j)->int {
         return get<0>( cel[j] ) - get<0> (cel[i]);
     };
-    auto can_reach = [cel](int i, int j)->bool {
+    auto can_reach = [&cel](int i, int j)->bool {
         int t1, x1, x2, t2, y1, y2;
         tie(t1, x1, y1) = cel[i] ;
         tie(t2, x2, y2) = cel[j] ;
