@@ -16,7 +16,7 @@ int main(){
     cel[0] = make_tuple(0,1,1);
     pref[0] = 0;
 
-    auto dist = [cel]( int i, int j)->int {
+    auto dist = [&cel]( int i, int j)->int {
         return get<0>( cel[j] ) - get<0> (cel[i]);
     };
     auto can_reach = [&cel](int i, int j)->bool {
