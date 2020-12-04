@@ -98,7 +98,9 @@ int main(){
 	assert (ans.size() <= n );
 	cout << ans.size() << endl;
 
-	for (auto &[a, b, c] : ans) {
+	for (auto x : ans) {
+		int a, b, c;
+		tie(a, b, c) = x;
 		cout << a << " " << b << " " << c << '\n';
 	}
 
