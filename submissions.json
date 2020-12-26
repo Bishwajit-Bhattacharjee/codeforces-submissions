@@ -1,4 +1,21 @@
 {
+  "CF102413257": {
+    "contest_id": 1454,
+    "language": "GNU C++17",
+    "path": "codeforces/1454/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Special Permutation",
+    "problem_url": "https://codeforces.com/contest/1454/problem/A",
+    "submission_id": "CF102413257",
+    "submission_url": "https://codeforces.com/contest/1454/submission/102413257",
+    "tags": [
+      "constructive algorithms",
+      "probabilities",
+      "*800"
+    ],
+    "timestamp": "Dec/26/2020 22:37"
+  },
   "CF102413665": {
     "contest_id": 1454,
     "language": "GNU C++17",
