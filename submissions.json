@@ -1,4 +1,25 @@
 {
+  "CF102851862": {
+    "contest_id": 1447,
+    "language": "GNU C++17",
+    "path": "codeforces/1447/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Xor Tree",
+    "problem_url": "https://codeforces.com/contest/1447/problem/E",
+    "submission_id": "CF102851862",
+    "submission_url": "https://codeforces.com/contest/1447/submission/102851862",
+    "tags": [
+      "bitmasks",
+      "divide and conquer",
+      "dp",
+      "graphs",
+      "string suffix structures",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "Dec/30/2020 23:12"
+  },
   "CF102896299": {
     "contest_id": 1447,
     "language": "GNU C++17",
