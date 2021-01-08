@@ -4,7 +4,9 @@ using ll = long long int;
 int const N = 5050;
 int const MOD = 1e9 + 7;
 
-ll dp[N][N];// to[N][N];
+ll dp[N][N], to[N][N];
+ll cum[N];
+
 
 int main(){
     ios::sync_with_stdio(0); cin.tie(0);
@@ -23,6 +25,15 @@ int main(){
             dp[i][kk] %= MOD;
         }
     }
+
+
+    for (int kk = 0; kk <= k; kk++){
+        for (int i = 1; i <= n; i++) {
+            cum[kk] = (cum[kk] + dp[i][kk]) % MOD;
+        }
+    }
+    int sum = 0;
+    for (int i = 1; i <= n; i++) sum += dp[i][k] , sum %= MOD;
 
     vector <ll> cnt(n+1, 0);
 
