@@ -20,7 +20,7 @@ int main(){
     for (int kk = 1; kk <= k; kk++) {
         for (int i = 1; i <= n; i++){
             dp[kk][i] = dp[kk-1][i-1] + dp[kk-1][i+1];
-            if(dp[kk][i] >= MOD) dp[kk][i] -= MOD;
+            dp[kk][i] %= MOD;
         }
     }
 
