@@ -19,15 +19,15 @@ int main(){
 
     for (int kk = 1; kk <= k; kk++) {
         for (int i = 1; i <= n; i++){
-            dp[kk][i] = dp[kk-1][i-1] + dp[kk-1][i+1];
+            dp[kk][i] = dp[kk-1][i+1] + dp[kk-1][i-1];
             dp[kk][i] %= MOD;
         }
     }
 
     vector <ll> cnt(n+1, 0);
 
-    for (int pos = 0; pos <= k; pos++) {
-        for (int now = 1; now <= n; now++){
+    for (int now = 1; now <= n; now++) {
+        for (int pos = 0; pos <= k; pos++){
             cnt[now] += dp[pos][now] * dp[k-pos][now] ;
             cnt[now] %= MOD;
         }
