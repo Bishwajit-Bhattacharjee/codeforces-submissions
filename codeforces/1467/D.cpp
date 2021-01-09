@@ -14,13 +14,13 @@ int main(){
     vector < int > a(n+1);
     for (int i = 1; i <= n; i++) cin >> a[i];
 
-    for(int i = 1; i <= n; i++) dp[0][i] = 1;
+    for(int i = 1; i <= n; i++) dp[i][0] = 1;
 
 
     for (int kk = 1; kk <= k; kk++) {
         for (int i = 1; i <= n; i++){
-            dp[kk][i] = dp[kk-1][i+1] + dp[kk-1][i-1];
-            dp[kk][i] %= MOD;
+            dp[i][kk] = dp[i+1][kk-1] + dp[i-1][kk-1];
+            dp[i][kk] %= MOD;
         }
     }
 
@@ -28,7 +28,7 @@ int main(){
 
     for (int now = 1; now <= n; now++) {
         for (int pos = 0; pos <= k; pos++){
-            cnt[now] += dp[pos][now] * dp[k-pos][now] ;
+            cnt[now] += dp[now][pos] * dp[now][k-pos] ;
             cnt[now] %= MOD;
         }
     }
