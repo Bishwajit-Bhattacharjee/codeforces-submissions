@@ -108,15 +108,24 @@ void solve(){
 
         bool change = 0;
 
-        for (auto &[vec, c] : cnt) {
-            if (vec.size() and c % 2 == 0) {
-                t_cnt[ vector<PII>()] += c;
+        for (auto it = cnt.begin(); it != cnt.end();) {
+            if (it->first.size() and it->second % 2 == 0) {
                 change = 1;
+                cnt[vector<PII>()] += it->second;
+                it = cnt.erase(it);
             }
-            else t_cnt[vec] += c;
+            else it++;
         }
 
-        cnt = t_cnt;
+        // for (auto [vec, c] : cnt) {
+        //     if (vec.size() and c % 2 == 0) {
+        //         t_cnt[ vector<PII>()] += c;
+        //         change = 1;
+        //     }
+        //     else t_cnt[vec] += c;
+        // }
+
+        // cnt = t_cnt;
 
         int res = 0;
         for (auto &[x, y]: cnt) {
@@ -133,6 +142,8 @@ void solve(){
     while (q--) {
         ll w;
         cin >> w;
+        if (ans.size() == 0) cout << "-1\n";
+
         if (w >= ans.size()) cout << ans.back() << "\n";
         else cout << ans[w] << "\n";
 
