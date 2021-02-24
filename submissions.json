@@ -1265,6 +1265,23 @@
     ],
     "timestamp": "Feb/18/2021 13:14"
   },
+  "CF108378681": {
+    "contest_id": 1486,
+    "language": "GNU C++17",
+    "path": "codeforces/1486/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Max Median",
+    "problem_url": "https://codeforces.com/contest/1486/problem/D",
+    "submission_id": "CF108378681",
+    "submission_url": "https://codeforces.com/contest/1486/submission/108378681",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp"
+    ],
+    "timestamp": "Feb/24/2021 14:53"
+  },
   "CF108394880": {
     "contest_id": 1486,
     "language": "GNU C++17",
