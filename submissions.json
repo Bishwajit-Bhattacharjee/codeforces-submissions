@@ -1529,6 +1529,24 @@
     ],
     "timestamp": "Feb/26/2021 20:14"
   },
+  "CF108591681": {
+    "contest_id": 1481,
+    "language": "GNU C++17",
+    "path": "codeforces/1481/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "AB Tree",
+    "problem_url": "https://codeforces.com/contest/1481/problem/F",
+    "submission_id": "CF108591681",
+    "submission_url": "https://codeforces.com/contest/1481/submission/108591681",
+    "tags": [
+      "dp",
+      "greedy",
+      "trees",
+      "*3100"
+    ],
+    "timestamp": "Feb/27/2021 14:26"
+  },
   "CF108774854": {
     "contest_id": 1491,
     "language": "GNU C++17",
