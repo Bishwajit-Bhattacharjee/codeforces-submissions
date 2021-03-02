@@ -1529,6 +1529,25 @@
     ],
     "timestamp": "Feb/26/2021 20:14"
   },
+  "CF108928087": {
+    "contest_id": 1494,
+    "language": "GNU C++17",
+    "path": "codeforces/1494/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "1D Sokoban",
+    "problem_url": "https://codeforces.com/contest/1494/problem/C",
+    "submission_id": "CF108928087",
+    "submission_url": "https://codeforces.com/contest/1494/submission/108928087",
+    "tags": [
+      "binary search",
+      "dp",
+      "greedy",
+      "implementation",
+      "two pointers"
+    ],
+    "timestamp": "Mar/02/2021 22:07"
+  },
   "CF109025134": {
     "contest_id": 1494,
     "language": "GNU C++17",
