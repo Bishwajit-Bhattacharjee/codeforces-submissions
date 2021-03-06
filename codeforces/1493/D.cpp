@@ -112,10 +112,13 @@ int main(){
 		vector <PII> tmp = factor(x);
 
 		for(auto [p, cnt] : tmp){
+			int mn = 0;
 			if (st[p].size() == n){
-				ll mul = bigmod(p, *st[p].begin());
-				mul = bigmod(mul, MOD - 2);
-				g = (g * mul) % MOD;
+				mn = *st[p].begin();
+				// ll mul = bigmod(p, *st[p].begin());
+
+				// mul = bigmod(mul, MOD - 2);
+				// g = (g * mul) % MOD;
 			}
 			if (how_much.count({i,p})){
 				int val = how_much[{i,p}];
@@ -124,11 +127,11 @@ int main(){
 
 			how_much[{i, p}] += cnt;
 			st[p].insert(how_much[{i, p}]);
+			
 			if (st[p].size() == n){
-				g = (g * bigmod(p, *st[p].begin())) % MOD;
+				g = (g * bigmod(p, *st[p].begin() - mn)) % MOD;
 			}
 		}
-
 
 		cout << g << '\n';
 	}
