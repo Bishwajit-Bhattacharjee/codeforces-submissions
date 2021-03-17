@@ -49,29 +49,39 @@ ll bigmod(ll a, ll b){
 	return x;
 }
 
-
+int LIM = 1e5 + 10;
 int const MX = 1e7 + 10;
 vector < ll > primes;
 
 vector < bool > marks;
-int virtual_value[MX];
 
-void sieve(){
+void sieve(int n)
+{
+    marks.resize(n+10,0);
+	marks[1] = 1;
+	for(int i = 2; i < n; i++){
+		if(!marks[i]){
+			for(int j = 2*i; j < n; j += i){
+				marks[j] = 1;
+			}
+			primes.push_back(i);
+		}
+	}
+}
+vector<int> factoring(int n){
+    vector<int> ret;
+    for (auto prime : primes){
 
-    for (int i = 1; i < MX; i++) virtual_value[i] = i;
-
-    marks.resize(1e5 + 10, 0);
-
-    for (ll i = 2; 1LL*i*i < MX; i++){
-        if (!marks[i]){
-
-            for (int j = i; j < MX; j += i){
-                if (j != i && 1LL * j * j < MX) marks[j] = 1;
-                while (virtual_value[j] % (i*i) == 0) 
-                    virtual_value[j] /= (i*i);
-            }
+        if (prime*1LL*prime > n) break;
+        if (n % prime == 0) {
+            int cnt = 0;
+            while (n % prime == 0) cnt++, n /= prime;
+            if (cnt & 1) ret.push_back(prime);
         }
+    //     cout << "prime : " << prime << endl;
     }
+    if (n != 1) ret.push_back(n);
+    return ret;
 }
 
 void solve(){
@@ -81,18 +91,15 @@ void solve(){
 
     for (int i = 1; i <= n; i++){
         cin >> a[i-1];
-        // cout << "map " << a[i-1];
-        a[i-1] = virtual_value[a[i-1]];
-        // cout << " " << a[i-1] << endl;
     }
     int ans = 1;
-    map <int, bool> has;
+    map <vector<int>, bool> has;
 
     for (int i = 0; i < n; i++){
+        vector<int> msk = factoring(a[i]);
         // cout << a[i] << " : " << endl;
         // for (auto x : msk) cout << x << " ";
         // cout << endl;
-        int msk = a[i];
         if (has.count(msk)){
             ans++;
             has.clear();
@@ -104,8 +111,7 @@ void solve(){
 
 int main(){    
 	ios::sync_with_stdio(false); cin.tie(0);
-    sieve();
-
+    sieve(LIM);
     // cout << "here" << endl;
     int t;
     cin >> t;
