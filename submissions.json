@@ -2677,6 +2677,26 @@
     ],
     "timestamp": "Apr/23/2021 20:40"
   },
+  "CF114179046": {
+    "contest_id": 1514,
+    "language": "GNU C++17",
+    "path": "codeforces/1514/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Cut and Stick",
+    "problem_url": "https://codeforces.com/contest/1514/problem/D",
+    "submission_id": "CF114179046",
+    "submission_url": "https://codeforces.com/contest/1514/submission/114179046",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*2000"
+    ],
+    "timestamp": "Apr/25/2021 13:33"
+  },
   "CF114272697": {
     "contest_id": 86,
     "language": "GNU C++17",

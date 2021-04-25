@@ -50,68 +50,39 @@ ll bigmod(ll a, ll b){
 	return x;
 }
 int const N = 4e5;
-const int BLOCK = 320;
-
 
 vector<int> g[N];
 
 vector<int> v;
 
-
-struct Query{
-    int l, r, id;
-    Query(int _l, int _r, int _id): l(_l), r(_r), id(_id){}
-    Query(){}
-
-    bool operator<(const Query& rhs) const {
-        return PII(l/BLOCK, r) < PII(rhs.l/BLOCK, rhs.r);
-    }
-};
-
-vector<Query> Q;
-int f[N], ff[N];
-int l = 0, r = -1;
-int maxi = 0;
-
-void add(int x){
-    int val = v[x];
-    if (ff[f[val]]) ff[f[val]]--;
-    f[val]++;
-    ff[f[val]]++;
-
-    maxi = max(maxi, f[v[x]]);
+int many(int l, int r, int val){
+    return upper_bound(all(g[val]), r) - upper_bound(all(g[val]), l-1);
 }
 
-void remove(int x){
-    if (ff[f[v[x]]]) ff[f[v[x]]]--;
-    f[v[x]]--;
-    ff[f[v[x]]]++;
-    
-    while (maxi && !ff[maxi]) maxi--;
-
-}
-
-int get_ans(int l, int r){
+int Q(int l, int r){
     int cnt = 30;
-    ll cc = maxi;
     bool sad = 0;
-
-    // cout << l << " " << r << " " << maxi << endl;
-
-    // cout << "DBD " <<  val << " " << cc << endl;
-    if ( (r - l + 2) / 2 < cc) {
-        sad = 1; 
+    ll cc = 0;
+    while(cnt--){
+        int x = uniform_int_distribution<int>(l,r)(rng);
+        int val = v[x];
+        cc = many(l, r, val);
+        // cout << "DBD " <<  val << " " << cc << endl;
+        if ( (r - l + 2) / 2 < cc) {
+            sad = 1; break;
+        }
     }
     if (!sad) return 1;
     // cout << "sad " << endl;
- 
+
     ll good = r - l + 1 - cc;
- 
+
     ll ans = max(cc - good, 1LL);
- 
+
     return ans;
 
 }
+
 
 int main(){
 
@@ -119,34 +90,19 @@ int main(){
 
     int n, q;
     cin >> n >> q;
-    v.resize(n);
+    v.resize(n + 1);
 
     for (int i = 0; i < n; i++){
         int tmp;
         cin >> tmp;
-        v[i] = tmp;
-        g[tmp].push_back(i);
+        v[i+1] = tmp;
+        g[tmp].push_back(i+1);
     }
 
-    Q.resize(q);
-
-    for (int i = 0; i < q; i++){
-        cin >> Q[i].l >> Q[i].r;
-        Q[i].l--, Q[i].r--;
-        Q[i].id = i;
+    while(q--){
+        int l, r;
+        cin >> l >> r;
+        cout << Q(l, r) << '\n';
     }
-    sort(all(Q));
-    vector<int> ans(q);
-
-    for (auto q: Q){
-        while (l > q.l) add(--l);
-        while (r < q.r) add(++r);
-        while (l < q.l) remove(l++);
-        while (r > q.r) remove(r--);
-        ans[q.id] = get_ans(l,r);
-    }
-
-    for (auto x : ans) cout << x << "\n";
-
 	return 0;
 }
