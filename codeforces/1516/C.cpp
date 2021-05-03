@@ -4,8 +4,8 @@ using ll = long long int;
 using PLL = pair<ll,ll>;
 #define all(x) (x).begin(), (x).end()
 
-int const N = 100*2010;
-bitset<N> bs;
+int const N = 2010;
+bool dp[3][N * 105];
 
 void solve(){
     int n;
@@ -15,18 +15,21 @@ void solve(){
 
     for (auto &x : v) cin >> x, tot += x;
 
-    bs.reset();
-    bs[0] = 1;
+    dp[1][0] = 1;
 
     for (int i = 0; i < n; i++){
-        bs |= (bs << v[i]);
+        for (int sum = 0; sum <= tot; sum++){
+            dp[i&1][sum] = dp[(i+1)&1][sum];
+            if (sum >= v[i])
+                dp[i&1][sum] |= dp[(i+1)&1][sum-v[i]];
+        }
     }
 
     if (tot & 1) {
         cout << "0\n"; return;
     }
 
-    if (!bs[tot/2]){
+    if (!dp[(n-1)&1][tot/2]){
         cout << "0\n"; return;
     }
 
