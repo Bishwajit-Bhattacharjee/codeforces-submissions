@@ -30,16 +30,13 @@ void solve(){
         cout << "0\n"; return;
     }
 
-    for (int i = 0; i < n; i++){
-        bs.reset();
-        bs[0] = 1;
-        int t = tot - v[i];
-        for (int j = 0; j < n; j++){
-            if (i != j) bs |= (bs << v[j]);
-        }
-        if ((t & 1) || !(bs[t/2])){
-            cout << "1\n" << i + 1 << "\n";
-            return;
+    while(true){
+        for (int i = 0; i < n; i++){
+            if (v[i] & 1){
+                cout << "1\n" << i + 1 << '\n';
+                return;
+            }
+            v[i] /= 2;
         }
     }
 }
