@@ -2677,6 +2677,21 @@
     ],
     "timestamp": "Apr/23/2021 20:40"
   },
+  "CF115261039": {
+    "contest_id": 1520,
+    "language": "GNU C++17",
+    "path": "codeforces/1520/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Arranging The Sheep",
+    "problem_url": "https://codeforces.com/contest/1520/problem/E",
+    "submission_id": "CF115261039",
+    "submission_url": "https://codeforces.com/contest/1520/submission/115261039",
+    "tags": [
+      "math"
+    ],
+    "timestamp": "May/05/2021 21:15"
+  },
   "CF115274538": {
     "contest_id": 1520,
     "language": "GNU C++17",
