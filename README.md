@@ -12,26 +12,27 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1198 | [E - Crypto Lights](https://codeforces.com/contest/1523/problem/E) | [GNU C++17](./codeforces/1523/E.cpp) | `combinatorics` `dp` `probabilities` `*2600` | May/31/2021 13:37 | 
-1197 | [D - Love-Hate](https://codeforces.com/contest/1523/problem/D) | [GNU C++17](./codeforces/1523/D.cpp) | `bitmasks` `brute force` `dp` `probabilities` `*2400` | May/31/2021 00:49 | 
-1196 | [C - Compression and Expansion](https://codeforces.com/contest/1523/problem/C) | [GNU C++17](./codeforces/1523/C.cpp) | `brute force` `data structures` `greedy` `implementation` `trees` `*1600` | May/30/2021 21:37 | 
-1195 | [B - Lord of the Values](https://codeforces.com/contest/1523/problem/B) | [GNU C++17](./codeforces/1523/B.cpp) | `constructive algorithms` `*1100` | May/30/2021 21:09 | 
-1194 | [A - Game of Life](https://codeforces.com/contest/1523/problem/A) | [GNU C++17](./codeforces/1523/A.cpp) | `implementation` `*800` | May/30/2021 20:52 | 
-1193 | [C2 - Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | [GNU C++17](./codeforces/1526/C2.cpp) | `data structures` `greedy` `*1600` | May/28/2021 21:43 | 
-1192 | [C1 - Potions (Easy Version)](https://codeforces.com/contest/1526/problem/C1) | [GNU C++17](./codeforces/1526/C1.cpp) | `brute force` `data structures` `dp` `greedy` `*1500` | May/28/2021 21:42 | 
-1191 | [D - MEX Tree](https://codeforces.com/contest/1527/problem/D) | [GNU C++17](./codeforces/1527/D.cpp) | `combinatorics` `dfs and similar` `implementation` `math` `trees` `*2400` | May/25/2021 15:57 | 
-1190 | [E - Trees of Tranquillity](https://codeforces.com/contest/1529/problem/E) | [GNU C++17](./codeforces/1529/E.cpp) | `data structures` `dfs and similar` `greedy` `trees` `*2300` | May/25/2021 13:34 | 
-1189 | [D - Kavi on Pairing Duty](https://codeforces.com/contest/1529/problem/D) | [GNU C++17](./codeforces/1529/D.cpp) | `combinatorics` `dp` `math` `number theory` `*1700` | May/25/2021 11:06 | 
-1188 | [B - Sifid and Strange Subsequences](https://codeforces.com/contest/1529/problem/B) | [GNU C++17](./codeforces/1529/B.cpp) | `greedy` `math` `sortings` `*1100` | May/24/2021 21:31 | 
-1187 | [A - Eshag Loves Big Arrays](https://codeforces.com/contest/1529/problem/A) | [GNU C++17](./codeforces/1529/A.cpp) | `constructive algorithms` `greedy` `math` `*800` | May/24/2021 21:01 | 
-1186 | [C - Parsa's Humongous Tree](https://codeforces.com/contest/1529/problem/C) | [GNU C++17](./codeforces/1529/C.cpp) | `dfs and similar` `dp` `graphs` `greedy` `trees` `*1600` | May/24/2021 20:56 | 
-1185 | [E - Partition Game](https://codeforces.com/contest/1527/problem/E) | [GNU C++17](./codeforces/1527/E.cpp) | `binary search` `data structures` `divide and conquer` `dp` `*2500` | May/22/2021 18:59 | 
-1184 | [C - Sequence Pair Weight](https://codeforces.com/contest/1527/problem/C) | [GNU C++17](./codeforces/1527/C.cpp) | `hashing` `implementation` `math` `*1600` | May/20/2021 20:48 | 
-1183 | [A - And Then There Were K](https://codeforces.com/contest/1527/problem/A) | [GNU C++17](./codeforces/1527/A.cpp) | `bitmasks` `*800` | May/20/2021 20:38 | 
-1182 | [E - Digit Tree](https://codeforces.com/contest/716/problem/E) | [GNU C++17](./codeforces/716/E.cpp) | `dfs and similar` `divide and conquer` `trees` `*2700` | May/19/2021 22:34 | 
-1181 | [E - Palindromes in a Tree](https://codeforces.com/contest/914/problem/E) | [GNU C++17](./codeforces/914/E.cpp) | `bitmasks` `data structures` `divide and conquer` `trees` `*2400` | May/19/2021 12:09 | 
-1180 | [E - Mahmoud and a xor trip](https://codeforces.com/contest/766/problem/E) | [GNU C++17](./codeforces/766/E.cpp) | `bitmasks` `constructive algorithms` `data structures` `dfs and similar` `dp` `math` `trees` `*2100` | May/18/2021 21:42 | 
-1179 | [D - Distance in Tree](https://codeforces.com/contest/161/problem/D) | [GNU C++17](./codeforces/161/D.cpp) | `dfs and similar` `dp` `trees` `*1800` | May/18/2021 21:01 | 
+1199 | [E - Crypto Lights](https://codeforces.com/contest/1523/problem/E) | [GNU C++17](./codeforces/1523/E.cpp) | `combinatorics` `dp` `probabilities` `*2600` | May/31/2021 13:37 | 
+1198 | [D - Love-Hate](https://codeforces.com/contest/1523/problem/D) | [GNU C++17](./codeforces/1523/D.cpp) | `bitmasks` `brute force` `dp` `probabilities` `*2400` | May/31/2021 00:49 | 
+1197 | [C - Compression and Expansion](https://codeforces.com/contest/1523/problem/C) | [GNU C++17](./codeforces/1523/C.cpp) | `brute force` `data structures` `greedy` `implementation` `trees` `*1600` | May/30/2021 21:37 | 
+1196 | [B - Lord of the Values](https://codeforces.com/contest/1523/problem/B) | [GNU C++17](./codeforces/1523/B.cpp) | `constructive algorithms` `*1100` | May/30/2021 21:09 | 
+1195 | [A - Game of Life](https://codeforces.com/contest/1523/problem/A) | [GNU C++17](./codeforces/1523/A.cpp) | `implementation` `*800` | May/30/2021 20:52 | 
+1194 | [C2 - Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | [GNU C++17](./codeforces/1526/C2.cpp) | `data structures` `greedy` `*1600` | May/28/2021 21:43 | 
+1193 | [C1 - Potions (Easy Version)](https://codeforces.com/contest/1526/problem/C1) | [GNU C++17](./codeforces/1526/C1.cpp) | `brute force` `data structures` `dp` `greedy` `*1500` | May/28/2021 21:42 | 
+1192 | [D - MEX Tree](https://codeforces.com/contest/1527/problem/D) | [GNU C++17](./codeforces/1527/D.cpp) | `combinatorics` `dfs and similar` `implementation` `math` `trees` `*2400` | May/25/2021 15:57 | 
+1191 | [E - Trees of Tranquillity](https://codeforces.com/contest/1529/problem/E) | [GNU C++17](./codeforces/1529/E.cpp) | `data structures` `dfs and similar` `greedy` `trees` `*2300` | May/25/2021 13:34 | 
+1190 | [D - Kavi on Pairing Duty](https://codeforces.com/contest/1529/problem/D) | [GNU C++17](./codeforces/1529/D.cpp) | `combinatorics` `dp` `math` `number theory` `*1700` | May/25/2021 11:06 | 
+1189 | [B - Sifid and Strange Subsequences](https://codeforces.com/contest/1529/problem/B) | [GNU C++17](./codeforces/1529/B.cpp) | `greedy` `math` `sortings` `*1100` | May/24/2021 21:31 | 
+1188 | [A - Eshag Loves Big Arrays](https://codeforces.com/contest/1529/problem/A) | [GNU C++17](./codeforces/1529/A.cpp) | `constructive algorithms` `greedy` `math` `*800` | May/24/2021 21:01 | 
+1187 | [C - Parsa's Humongous Tree](https://codeforces.com/contest/1529/problem/C) | [GNU C++17](./codeforces/1529/C.cpp) | `dfs and similar` `dp` `graphs` `greedy` `trees` `*1600` | May/24/2021 20:56 | 
+1186 | [E - Partition Game](https://codeforces.com/contest/1527/problem/E) | [GNU C++17](./codeforces/1527/E.cpp) | `binary search` `data structures` `divide and conquer` `dp` `*2500` | May/22/2021 18:59 | 
+1185 | [C - Sequence Pair Weight](https://codeforces.com/contest/1527/problem/C) | [GNU C++17](./codeforces/1527/C.cpp) | `hashing` `implementation` `math` `*1600` | May/20/2021 20:48 | 
+1184 | [A - And Then There Were K](https://codeforces.com/contest/1527/problem/A) | [GNU C++17](./codeforces/1527/A.cpp) | `bitmasks` `*800` | May/20/2021 20:38 | 
+1183 | [E - Digit Tree](https://codeforces.com/contest/716/problem/E) | [GNU C++17](./codeforces/716/E.cpp) | `dfs and similar` `divide and conquer` `trees` `*2700` | May/19/2021 22:34 | 
+1182 | [E - Palindromes in a Tree](https://codeforces.com/contest/914/problem/E) | [GNU C++17](./codeforces/914/E.cpp) | `bitmasks` `data structures` `divide and conquer` `trees` `*2400` | May/19/2021 12:09 | 
+1181 | [E - Mahmoud and a xor trip](https://codeforces.com/contest/766/problem/E) | [GNU C++17](./codeforces/766/E.cpp) | `bitmasks` `constructive algorithms` `data structures` `dfs and similar` `dp` `math` `trees` `*2100` | May/18/2021 21:42 | 
+1180 | [D - Distance in Tree](https://codeforces.com/contest/161/problem/D) | [GNU C++17](./codeforces/161/D.cpp) | `dfs and similar` `dp` `trees` `*1800` | May/18/2021 21:01 | 
+1179 | [C - Ciel the Commander](https://codeforces.com/contest/321/problem/C) | [GNU C++17](./codeforces/321/C.cpp) | `constructive algorithms` `dfs and similar` `divide and conquer` `greedy` `trees` `*2100` | May/18/2021 20:15 | 
 1178 | [F2 - Guess the K-th Zero (Hard version)](https://codeforces.com/contest/1520/problem/F2) | [GNU C++17](./codeforces/1520/F2.cpp) | `binary search` `data structures` `interactive` | May/05/2021 22:05 | 
 1177 | [F1 - Guess the K-th Zero (Easy version)](https://codeforces.com/contest/1520/problem/F1) | [GNU C++17](./codeforces/1520/F1.cpp) | `binary search` `interactive` | May/05/2021 21:28 | 
 1176 | [E - Arranging The Sheep](https://codeforces.com/contest/1520/problem/E) | [GNU C++17](./codeforces/1520/E.cpp) | `math` | May/05/2021 21:15 | 
