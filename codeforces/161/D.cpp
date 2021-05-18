@@ -1,59 +1,49 @@
 #include <bits/stdc++.h>
 using namespace std;
-int const MX = 5e4 + 5;
-typedef long long int ll;
-ll dp[MX][505];
-int n,k;
-vector < int > g[MX];
-ll ans;
-//ll dist[MX];
+using ll = long long int;
 
-void dfs(int r, int p, int lvl)
-{
-    //dist[r] = lvl;
-    dp[r][0] = 1;
+int const N = 5e4 + 10;
+int n, k;
+vector<vector<int>> g;
+ll dp[N][505];
+ll ans = 0;
 
-    for(auto u : g[r])
-    {
-        if(u == p)  continue;
-        //cout << r << endl;
-        dfs(u,r,lvl+1);
-        for(int kk = 1; kk <= k; kk++)
-        {
-            dp[r][kk] += dp[u][kk-1];
-        }
-        //cout <<  " matha " << r << " "  << dp[r][2] << endl;
-        //cout << r << " " << dp[r][2] << endl;
+void dfs(int u, int p){
+
+    dp[u][1] = 1;
+
+    for (auto v : g[u]){
+       if (v == p) continue;
+       dfs(v, u);
+
+       for (int here = 0; here < k; here++){
+           ans += dp[u][k-here] * dp[v][here]; 
+       } 
+
+       for (int here = 0; here < k; here++){
+           dp[u][here + 1] += dp[v][here];
+       }
     }
-
-    ll tot = 0;
-    for(int kk = 1; kk <= k; kk++)
-    {
-        ll can = (kk == k);
-
-        for(auto u : g[r]){
-            if(u == p ) continue;
-            tot +=  can * dp[u][kk-1];
-            can += dp[u][k-kk-1] ;
-        }
-    }
-    ans += tot;
 
 }
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cin >> n >> k;
 
-    for(int i = 0; i < n - 1; i++)
-    {
-        int a,b;
+int main(){
+    ios::sync_with_stdio(0); cin.tie(0);
+
+    cin >> n >> k;
+    k++;
+    g.assign(n+1, vector<int>());
+    
+    for (int i = 0; i < n - 1; i++){
+        int a, b;
         cin >> a >> b;
         g[a].push_back(b);
         g[b].push_back(a);
     }
-    dfs(1,-1,0);
+
+    dfs(1, -1);
+
     cout << ans << endl;
+
     return 0;
 }
