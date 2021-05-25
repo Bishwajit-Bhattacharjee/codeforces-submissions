@@ -3104,6 +3104,26 @@
     ],
     "timestamp": "May/05/2021 22:05"
   },
+  "CF117308193": {
+    "contest_id": 1527,
+    "language": "GNU C++17",
+    "path": "codeforces/1527/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "MEX Tree",
+    "problem_url": "https://codeforces.com/contest/1527/problem/D",
+    "submission_id": "CF117308193",
+    "submission_url": "https://codeforces.com/contest/1527/submission/117308193",
+    "tags": [
+      "combinatorics",
+      "dfs and similar",
+      "implementation",
+      "math",
+      "trees",
+      "*2400"
+    ],
+    "timestamp": "May/25/2021 15:57"
+  },
   "CF117659645": {
     "contest_id": 1526,
     "language": "GNU C++17",
