@@ -1,66 +1,59 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long int ll;
-int const N = 2e5 + 10;
-int const MOD = 1e9 + 7;
-bool vis[N] ;
-int b[N] ;
-vector < int > g[N] ;
+using ll = long long int;
 
-ll dp[N][3] ;
+int const N = 1e5 + 10;
+ll const M = 1e9 + 7;
+vector<vector<int>> g;
+int isBlack[N];
+vector<vector<ll>> dp;
 
-void dfs(int u)
-{
-    vis[u] = 1;
-    dp[u][0] = 1 - b[u] ;
-    dp[u][1] = b[u] ;
 
-    for(auto v: g[u])
-    {
-        if(vis[v]) continue;
-        int old[2] = {0};
-        old[0] = dp[u][0] ;
-        old[1] = dp[u][1] ;
+void dfs(int u, int p){
+    dp[u][1] = isBlack[u];
+    dp[u][0] = 1 - isBlack[u];
 
-        dp[u][0] = dp[u][1] = 0;
+    for (auto v : g[u]){
+        if (v == p) continue;
+        vector<ll> cpy(dp[u]);
+        dfs(v, u);
 
-        dfs(v);
+        dp[u][0] = cpy[0] * dp[v][1] ;
+        dp[u][1] = cpy[1] * dp[v][1] ;
+    
+        dp[u][0] %= M, dp[u][1] %= M;
 
-        /// taken node v
-        dp[u][1] += old[0] * dp[v][1] ;
-        dp[u][1] %= MOD;
-        dp[u][1] += old[1] * dp[v][0] ;
-        dp[u][1] %= MOD;
+        dp[u][0] += cpy[0] * dp[v][0] % M;
+        dp[u][0] %= M;
 
-        dp[u][0] += old[0] * dp[v][0] ;
-        dp[u][0] %= MOD;
+        dp[u][1] += cpy[1] * dp[v][0] % M;
+        dp[u][1] %= M;
 
-        /// not taken
-
-        dp[u][1] += old[1] * dp[v][1];
-        dp[u][1] %= MOD;
-        dp[u][0] += old[0] * dp[v][1] ;
-        dp[u][0] %= MOD;
-
+        dp[u][1] += cpy[0] * dp[v][1] % M;
+        dp[u][1] %= M;
     }
 }
-int main()
-{
-    ios::sync_with_stdio(false); cin.tie(0);
+
+int main(){
+    ios::sync_with_stdio(0); cin.tie(0);
+
     int n;
     cin >> n;
-    for(int i = 0; i + 1 < n; i++)
-    {
-        int tmp;
-        cin >> tmp;
-        g[i+1].push_back(tmp);
-        g[tmp].push_back(i+1);
+    g.assign(n+1, vector<int>());
+    dp.assign(n+1, vector<ll>(2, 0));
+    
+    for (int i = 0; i + 1< n; i++){
+        int p;
+        cin >> p;
+        g[p].push_back(i+1);
+        g[i+1].push_back(p);
     }
 
-    for(int i = 0; i < n; i++) cin >> b[i] ;
+    for (int i = 0; i < n; i++) cin >> isBlack[i];
 
-    dfs(0);
-    cout << dp[0][1] << endl;
+    dfs(0, -1);
+
+    cout << dp[0][1] << "\n";
 
     return 0;
 }
