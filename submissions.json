@@ -3104,6 +3104,24 @@
     ],
     "timestamp": "May/05/2021 22:05"
   },
+  "CF117964510": {
+    "contest_id": 1523,
+    "language": "GNU C++17",
+    "path": "codeforces/1523/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Crypto Lights",
+    "problem_url": "https://codeforces.com/contest/1523/problem/E",
+    "submission_id": "CF117964510",
+    "submission_url": "https://codeforces.com/contest/1523/submission/117964510",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "probabilities",
+      "*2600"
+    ],
+    "timestamp": "May/31/2021 13:37"
+  },
   "CF16649032": {
     "contest_id": 1,
     "language": "GNU C",
