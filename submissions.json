@@ -3547,6 +3547,23 @@
     ],
     "timestamp": "May/31/2021 13:37"
   },
+  "CF119695174": {
+    "contest_id": 1534,
+    "language": "GNU C++17",
+    "path": "codeforces/1534/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Lost Tree",
+    "problem_url": "https://codeforces.com/contest/1534/problem/D",
+    "submission_id": "CF119695174",
+    "submission_url": "https://codeforces.com/contest/1534/submission/119695174",
+    "tags": [
+      "constructive algorithms",
+      "interactive",
+      "trees"
+    ],
+    "timestamp": "Jun/17/2021 14:44"
+  },
   "CF16649032": {
     "contest_id": 1,
     "language": "GNU C",
