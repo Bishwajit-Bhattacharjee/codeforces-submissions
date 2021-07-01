@@ -3739,6 +3739,24 @@
     ],
     "timestamp": "Jun/17/2021 14:44"
   },
+  "CF121019080": {
+    "contest_id": 1541,
+    "language": "GNU C++17",
+    "path": "codeforces/1541/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Pretty Permutations",
+    "problem_url": "https://codeforces.com/contest/1541/problem/A",
+    "submission_id": "CF121019080",
+    "submission_url": "https://codeforces.com/contest/1541/submission/121019080",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Jul/01/2021 17:31"
+  },
   "CF121020092": {
     "contest_id": 1541,
     "language": "GNU C++17",
