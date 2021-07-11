@@ -3739,6 +3739,25 @@
     ],
     "timestamp": "Jun/17/2021 14:44"
   },
+  "CF122037285": {
+    "contest_id": 1547,
+    "language": "GNU C++17",
+    "path": "codeforces/1547/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Array Stabilization (GCD version)",
+    "problem_url": "https://codeforces.com/contest/1547/problem/F",
+    "submission_id": "CF122037285",
+    "submission_url": "https://codeforces.com/contest/1547/submission/122037285",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "data structures",
+      "number theory",
+      "two pointers"
+    ],
+    "timestamp": "Jul/11/2021 11:08"
+  },
   "CF122038785": {
     "contest_id": 1547,
     "language": "GNU C++17",
